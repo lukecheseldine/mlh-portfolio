@@ -10,6 +10,7 @@
     <meta property="og:url" content="{{ url }}">
 
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
+    {% block head %}{% endblock %}
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
@@ -25,30 +26,30 @@
 <body>
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <a href="#">
+        <a href="https://fellowship.mlh.io/">
             <div class="nav-logo">
                 <img src="./static/img/logo.svg" />
             </div>
         </a>
 
         <!-- Nav bar -->
-        <a class="navbar-brand" href="#">Team LMS</a>
+        <a class="navbar-brand" href="{{ url_for('index') }}">Team LMS</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="{{ url_for('index') }}">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">About</a>
+                    <a class="nav-link" href="{{ url_for('about') }}">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">Experience</a>
+                    <a class="nav-link" href="{{ url_for('experience') }}">Experience</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">Map</a>
+                    <a class="nav-link" href="{{ url_for('map') }}">Map</a>
                 </li>
             </ul>
         </div>

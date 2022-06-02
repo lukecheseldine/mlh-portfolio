@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    <h1>About</h1>
+    <!-- Bootstrap carousel -->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <ol class="carousel-indicators">
+            <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+
+
+            <div class="carousel-item active">
+                <h1>Sam Emard-Thibault</h1>
+                <img class="selfie-image" alt="selfie" src="../static/img/sam/samSelfie.jpg">
+                <p>some intro...</p>
+                <a href="#" class="btn btn-lg btn-dark btn-outline-light">
+                    See more! </a>
+            </div>
+            <div class="carousel-item">
+                <h1>Luke</h1>
+                <img class="selfie-image" alt="selfie" src="../static/img/luke/luke_jacket.jpg">
+                <p>some intro...</p>
+                <a href="#" class="btn btn-lg btn-dark btn-outline-light">
+                    See more! </a>
+            </div>
+            <div class="carousel-item">
+                <h1>Mustafa</h1>
+                <img class="selfie-image" alt="selfie" src="../static/img/mustafa/mustafa_profile.jpg">
+                <p>some intro...</p>
+                <a href="#" class="btn btn-lg btn-dark btn-outline-light">
+                    See more!
+                </a>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+        </div>
+    </div>
+
+{% endblock %}
