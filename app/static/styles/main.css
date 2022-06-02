@@ -18,7 +18,12 @@ body {
     margin: 0px;
 }
 
-.nav-bar {
+.nav-logo img {
+    width: 210px;
+    margin-right: 30px;
+}
+
+/* .nav-bar {
     width: 100%;
     display: inline-block;
     background-color: #343a40;
@@ -31,14 +36,9 @@ body {
     display: inline-flex;
     height: 60%;
     width: 350px;
-}
+} */
 
-.nav-logo img {
-    width: 210px;
-    margin-right: 30px;
-}
-
-.nav-content nav {
+/* .nav-content nav {
     display: block;
     width: 100%;
     text-align: right;
@@ -57,9 +57,9 @@ body {
     font-size: 50px;
     font-weight: 700;
     color: white;
-}
+} */
 
-.profile img {
+/* .profile img {
     border-radius: 50%;
     max-width: 100%;
     max-height: 100%;
@@ -78,26 +78,34 @@ body {
     padding: 20px 0px 50px 0px;
     height: 150px;
     background-color: #1d539f;
-}
+} */
 
-.banner .logo {
+/* .banner .logo {
     max-width: 180px;
     max-height: 60px;
     width: auto;
     height: auto;
-}
+} */
 
-.banner .title {
+/* .banner .title {
     color: white;
     font-size: 50px;
     font-weight: 700;
-}
+} */
+
 
 /* Start of intro css */
 .header {
+    height: 200px;
+    background-color: #343a40;
+}
+
+.header-text {
     text-align: center;
     position: relative;
-    top: 30px;
+    color: white;
+    font-size: 450%;
+    top: 25px;
 }
 
 .intro,
@@ -107,6 +115,6 @@ body {
     margin-top: 200px;
 }
 
-.intro{
+.intro {
     text-align: center;
 }
