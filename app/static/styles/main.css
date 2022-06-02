@@ -101,11 +101,44 @@ body {
 }
 
 .header-text {
-    text-align: center;
-    position: relative;
     color: white;
     font-size: 450%;
     top: 25px;
+
+    /* These properties are for the typing animation */
+    display: inline-block;
+    overflow: hidden;
+    letter-spacing: 2px;
+    animation: typing 1s steps(25, end), blink .75s step-end infinite;
+    white-space: nowrap;
+    border-right: 2px solid white;
+    box-sizing: border-box;
+    position: relative;
+    left: 25%;
+}
+
+/* Specify the typing position */
+@keyframes typing {
+    from {
+        width: 0%
+    }
+
+    to {
+        width: 48%
+    }
+}
+
+/* Specify the blinking position */
+@keyframes blink {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: white
+    }
 }
 
 .intro,
