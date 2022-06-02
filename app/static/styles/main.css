@@ -112,14 +112,20 @@ body {
 .about,
 .experience,
 .map {
-    margin-top: 100px;
+    margin-top: 300px;
 }
 
 .intro {
+
     text-align: center;
 }
 
 .intro-body {
     margin-top: 20px;
     font-size: large;
+}
+
+.carousel-item {
+    height: 300px;
+    background: #777;
 }
