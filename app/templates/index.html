@@ -1,40 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta property="og:title" content="Personal Portfolio">
-    <meta property="og:description" content="My Personal Portfolio">
-    <meta property="og:url" content="{{ url }}">
+{% block title %}{{ title }}{% endblock %}
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-
-    <link lang='sass' rel="stylesheet" href="./static/styles/main.css">
-    <link rel='icon' href='./static/img/favicon.ico' type='image/x-icon' />
-    <title>{{ title }}</title>
-</head>
-
-<body>
-    <header class="nav-bar">
-        <div class="nav-content">
-            <a href="/">
-                <div class="nav-logo">
-                    <img src="./static/img/logo.svg" />
-                </div>
-            </a>
-        </div>
-    </header>
-
-    <div class="profile">
-        <div id="profile-picture" class="profile-picture">
-            <img src="./static/img/logo.jpg">
-        </div>
-        <h1>{{ title }}</h1>
+{% block content %}
+    <h1>Welcome to our portfolio!</h1>
+    <div class="intro">
+        <h2>This is the intro! Hopefully we will display some cool graphics here :)</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aperiam architecto beatae consequatur delectus deleniti dignissimos eius, eligendi esse ipsam modi neque perspiciatis quos repudiandae vitae. Dolor enim error numquam! <ip</ip></p>
     </div>
-</body>
-</html>
+
+    <div class="about">
+        <h2>This is our about section! Hopefully we will have some nice photos and text in a carousel here.</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem eius harum impedit numquam quis repellendus soluta sunt! Blanditiis consequuntur doloribus eos harum incidunt ipsa itaque, necessitatibus nisi nobis reiciendis veritatis.</p>
+    </div>
+
+    <div class="experience">
+        <h2>This is our experience section! I don't remember what we want to put here and how we'll display it, but I'm sure it'll be awesome!</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aut autem consequuntur, corporis, dolor ea fugit illum iste itaque minus nisi praesentium qui quia repellendus rerum ut velit veritatis vitae.</p>
+    </div>
+
+    <div class="map">
+        <h2>This is where we'll put the map. Should be pretty sick...</h2>
+    </div>
+{% endblock %}
+
+
+
+
+
