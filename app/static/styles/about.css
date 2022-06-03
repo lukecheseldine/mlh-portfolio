@@ -53,4 +53,12 @@
     object-fit: cover;
 }
 
+.card-group {
+    width: 100rem;
+    position: relative;
+    left: 8%;
+}
 
+.card {
+    margin: 20px;
+}
