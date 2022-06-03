@@ -67,10 +67,11 @@
 }
 
 .card-body i {
-    font-size:25px;
-    color:#738F75;
-    margin:0.5em;
-    border:none;
+    text-rendering: optimizeLegibility;
+    font-size: 25px;
+    color: #738F75;
+    margin: 0.5em;
+    border: none;
 }
 
 .card-body a {
