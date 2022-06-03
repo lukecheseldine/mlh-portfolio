@@ -3,125 +3,147 @@
 {% block title %}{{ title }}{% endblock %}
 
 {% block head %}
-<link rel="stylesheet" href="{{ url_for('static', filename='styles/about.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/about.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 {% endblock %}
 
 {% block content %}
-<div class="about-container">
-    <div class="header">
-        <h1 class="header-text">About</h1>
-    </div>
+    <div class="about-container">
+        <div class="header">
+            <h1 class="header-text">About</h1>
+        </div>
 
-    <!-- Bootstrap carousel -->
-    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+        <!-- Bootstrap carousel -->
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
 
-        <ol class="carousel-indicators">
-            <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
-            <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
-        </ol>
+            <ol class="carousel-indicators">
+                <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+            </ol>
 
-        <!-- carousel items -->
-        <div class="carousel-inner">
+            <!-- carousel items -->
+            <div class="carousel-inner">
 
 
-            <div class="carousel-item active">
-                <h1>{{data.sam.name}}</h1>
-                <img class="selfie-image-sam" alt="selfie" src="../static/img/sam/samSelfie.jpg">
-                <p>{{data.sam.about_short}}</p>
-                <a href="#" class="btn btn-lg btn-dark btn-outline-light">
-                    See more! </a>
-            </div>
-            <div class="carousel-item">
-                <h1>{{data.luke.name}}</h1>
-                <img class="selfie-image-luke" alt="selfie" src="../static/img/luke/luke_jacket.jpg">
-                <p>{{data.luke.about_short}}</p>
-                <a href="#" class="btn btn-lg btn-dark btn-outline-light">
-                    See more! </a>
-            </div>
-            <div class="carousel-item">
-                <h1>{{data.mustafa.name}}</h1>
-                <img class="selfie-image-mustafa" alt="selfie" src="../static/img/mustafa/mustafa_profile.jpg">
-                <p>{{data.mustafa.about_short}}</p>
-                <a href="#" class="btn btn-lg btn-dark btn-outline-light">
-                    See more!
+                <div class="carousel-item active">
+                    <h1>{{ data.sam.name }}</h1>
+                    <img class="selfie-image-sam" alt="selfie" src="../static/img/sam/samSelfie.jpg">
+                    <p>{{ data.sam.about_short }}</p>
+                    <a href="#" class="btn btn-lg btn-dark btn-outline-light">
+                        See more! </a>
+                </div>
+                <div class="carousel-item">
+                    <h1>{{ data.luke.name }}</h1>
+                    <img class="selfie-image-luke" alt="selfie" src="../static/img/luke/luke_jacket.jpg">
+                    <p>{{ data.luke.about_short }}</p>
+                    <a href="#" class="btn btn-lg btn-dark btn-outline-light">
+                        See more! </a>
+                </div>
+                <div class="carousel-item">
+                    <h1>{{ data.mustafa.name }}</h1>
+                    <img class="selfie-image-mustafa" alt="selfie" src="../static/img/mustafa/mustafa_profile.jpg">
+                    <p>{{ data.mustafa.about_short }}</p>
+                    <a href="#" class="btn btn-lg btn-dark btn-outline-light">
+                        See more!
+                    </a>
+                </div>
+
+                <!-- Arrow carousel controls -->
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
                 </a>
             </div>
+        </div>
 
-            <!-- Arrow carousel controls -->
-            <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <!-- Cards displaying individual information -->
+        <div class="card-group">
 
-            </a>
-            <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <div class="card">
+                <img class="card-img-top-luke" src="../static/img/luke/luke_jacket.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">{{ data.luke.name }}</h5>
+                    <p class="card-text">{{ data.luke.about }}</p>
+                    <b class="card-text">Education:</b>
+                    <p class="card-text">{{ data.luke.education }}</p>
+                    <b class="card-text">Hobbies:</b>
+                    <p class="card-text">I enjoy {{ data.luke.hobbies }}</p>
 
-            </a>
+                    <!-- for the contact section, we should implement icons, this will do for now -->
+                    <b class="card-text">Contact:</b>
+                    <br>
+                    <a href={{ data.luke.social[0].val }}>
+                        <i class="fa fa-linkedin-square"></i>
+                    </a>
+                    <a href={{ data.luke.social[1].val }}>
+                        <i class="fa fa-github"></i>
+                    </a>
+                    <a href={{ data.luke.social[2].val }}>
+                        <i class="fa fa-envelope"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img-top-sam" src="../static/img/sam/samSelfie.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">{{ data.sam.name }}</h5>
+                    <p class="card-text">{{ data.sam.about }}</p>
+                    <b class="card-text">Education:</b>
+                    <p class="card-text">{{ data.sam.education }}</p>
+                    <b class="card-text">Hobbies:</b>
+                    <p class="card-text">I enjoy {{ data.sam.hobbies }}</p>
+
+                    <!-- for the contact section, we should implement icons, this will do for now -->
+                    <b class="card-text">Contact:</b>
+                    <br>
+                    <a href={{ data.sam.social[0].val }}>
+                        <i class="fa fa-linkedin-square"></i>
+                    </a>
+                    <a href={{ data.sam.social[1].val }}>
+                        <i class="fa fa-github"></i>
+                    </a>
+                    <a href={{ data.sam.social[2].val }}>
+                        <i class="fa fa-envelope"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img-top-mustafa" src="../static/img/mustafa/mustafa_profile.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">{{ data.mustafa.name }}</h5>
+                    <p class="card-text">{{ data.mustafa.about }}</p>
+                    <b class="card-text">Education:</b>
+                    <p class="card-text">{{ data.mustafa.education }}</p>
+                    <b class="card-text">Hobbies:</b>
+                    <p class="card-text">I enjoy {{ data.mustafa.hobbies }}</p>
+
+                    <!-- for the contact section, we should implement icons, this will do for now -->
+                    <b class="card-text">Contact:</b>
+                    <br>
+                    <a href={{ data.mustafa.social[0].val }}>
+                        <i class="fa fa-linkedin-square"></i>
+                    </a>
+                    <a href={{ data.mustafa.social[1].val }}>
+                        <i class="fa fa-github"></i>
+                    </a>
+                    <a href={{ data.mustafa.social[2].val }}>
+                        <i class="fa fa-envelope"></i>
+                    </a>
+
+
+                </div>
+            </div>
         </div>
     </div>
-
-    <!-- Cards displaying individual information -->
-    <div class="card-group">
-
-        <div class="card">
-            <img class="card-img-top-luke" src="../static/img/luke/luke_jacket.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">{{data.luke.name}}</h5>
-                <p class="card-text">{{data.luke.about}}</p>
-                <b class="card-text">Education:</b>
-                <p class="card-text">{{data.luke.education}}</p>
-                <b class="card-text">Hobbies:</b>
-                <p class="card-text">I enjoy {{data.luke.hobbies}}</p>
-
-                <!-- for the contact section, we should implement icons, this will do for now -->
-                <b class="card-text">Contact:</b>
-                <a href={{data.luke.social[0].val}}>{{data.luke.social[0].name}}</a>
-                <a href={{data.luke.social[1].val}}>{{data.luke.social[1].name}}</a>
-                <b class="card-text">{{data.luke.social[2].value}}</b>
-
-            </div>
-        </div>
-
-        <div class="card">
-            <img class="card-img-top-sam" src="../static/img/sam/samSelfie.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">{{data.sam.name}}</h5>
-                <p class="card-text">{{data.sam.about}}</p>
-                <b class="card-text">Education:</b>
-                <p class="card-text">{{data.sam.education}}</p>
-                <b class="card-text">Hobbies:</b>
-                <p class="card-text">I enjoy {{data.sam.hobbies}}</p>
-
-                <!-- for the contact section, we should implement icons, this will do for now -->
-                <b class="card-text">Contact:</b>
-                <a href={{data.sam.social[0].val}}>{{data.sam.social[0].name}}</a>
-                <a href={{data.sam.social[1].val}}>{{data.sam.social[1].name}}</a>
-                <b class="card-text">{{data.sam.social[2].value}}</b>
-
-            </div>
-        </div>
-
-        <div class="card">
-            <img class="card-img-top-mustafa" src="../static/img/mustafa/mustafa_profile.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">{{data.mustafa.name}}</h5>
-                <p class="card-text">{{data.mustafa.about}}</p>
-                <b class="card-text">Education:</b>
-                <p class="card-text">{{data.mustafa.education}}</p>
-                <b class="card-text">Hobbies:</b>
-                <p class="card-text">I enjoy {{data.mustafa.hobbies}}</p>
-
-                <!-- for the contact section, we should implement icons, this will do for now -->
-                <b class="card-text">Contact:</b>
-                <a href={{data.mustafa.social[0].val}}>{{data.mustafa.social[0].name}}</a>
-                <a href={{data.mustafa.social[1].val}}>{{data.mustafa.social[1].name}}</a>
-                <b class="card-text">{{data.mustafa.social[2].value}}</b>
-
-
-            </div>
-        </div>
-    </div>
-</div>
 
 
 {% endblock %}
