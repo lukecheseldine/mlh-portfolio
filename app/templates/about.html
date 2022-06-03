@@ -35,13 +35,28 @@
                         <p class="card-text">{{data.luke.education}}</p>
                         <b class="card-text">Hobbies:</b>
                         <p class="card-text">I enjoy {{data.luke.hobbies}}</p>
-        
+
+                        <div class="well text-center">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <a href="#"><img src="../static/img/luke/luke_valley.jpg" alt="luke in the valley"
+                                            class="img-fluid luke-img-hobby1"></a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="#"><img src="../static/img/luke/Sophomore_Year.jpg"
+                                            alt="luke playing soccer" class="img-fluid luke-img-hobby1"></a>
+                                </div>
+                            </div>
+                        </div>
+
                         <!-- for the contact section, we should implement icons, this will do for now -->
                         <b class="card-text">Contact:</b>
                         <a href={{data.luke.social[0].val}}>{{data.luke.social[0].name}}</a>
                         <a href={{data.luke.social[1].val}}>{{data.luke.social[1].name}}</a>
                         <b class="card-text">{{data.luke.social[2].value}}</b>
-        
+
+                        <a href="{{ url_for('experience') }}" class="btn btn-lg btn-dark btn-outline-light">
+                            See More! </a>
                     </div>
                 </div>
             </div>
@@ -56,37 +71,67 @@
                         <p class="card-text">{{data.sam.education}}</p>
                         <b class="card-text">Hobbies:</b>
                         <p class="card-text">I enjoy {{data.sam.hobbies}}</p>
-        
+
+                        <div class="well text-center">
+                            <div class="row">
+                                <div class="col-md-6 car-container">
+                                    <a href="#"><img src="../static/img/sam/cars.jpg" alt="cars"
+                                            class="img-fluid car-img"></a>
+                                </div>
+                                <div class="col-md-6 comp-container">
+                                    <a href="#"><img src="../static/img/sam/computer.jpg" alt="computer"
+                                            class="img-fluid comp-img"></a>
+                                </div>
+                            </div>
+                        </div>
+
                         <!-- for the contact section, we should implement icons, this will do for now -->
                         <b class="card-text">Contact:</b>
                         <a href={{data.sam.social[0].val}}>{{data.sam.social[0].name}}</a>
                         <a href={{data.sam.social[1].val}}>{{data.sam.social[1].name}}</a>
                         <b class="card-text">{{data.sam.social[2].value}}</b>
-        
+
+                        <a href="{{ url_for('experience') }}" class="btn btn-lg btn-dark btn-outline-light">
+                            See More! </a>
                     </div>
                 </div>
             </div>
 
             <div class="carousel-item">
-         <div class="card">
-            <img class="card-img-top-mustafa" src="../static/img/mustafa/mustafa_profile.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">{{data.mustafa.name}}</h5>
-                <p class="card-text">{{data.mustafa.about}}</p>
-                <b class="card-text">Education:</b>
-                <p class="card-text">{{data.mustafa.education}}</p>
-                <b class="card-text">Hobbies:</b>
-                <p class="card-text">I enjoy {{data.mustafa.hobbies}}</p>
+                <div class="card">
+                    <img class="card-img-top-mustafa" src="../static/img/mustafa/mustafa_profile.jpg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">{{data.mustafa.name}}</h5>
+                        <p class="card-text">{{data.mustafa.about}}</p>
+                        <b class="card-text">Education:</b>
+                        <p class="card-text">{{data.mustafa.education}}</p>
+                        <b class="card-text">Hobbies:</b>
+                        <p class="card-text">I enjoy {{data.mustafa.hobbies}}</p>
 
-                <!-- for the contact section, we should implement icons, this will do for now -->
-                <b class="card-text">Contact:</b>
-                <a href={{data.mustafa.social[0].val}}>{{data.mustafa.social[0].name}}</a>
-                <a href={{data.mustafa.social[1].val}}>{{data.mustafa.social[1].name}}</a>
-                <b class="card-text">{{data.mustafa.social[2].value}}</b>
+                        <div class="well text-center">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <a href="#"><img src="../static/img/mustafa/basketball.jpg" alt="inn_logo"
+                                            class="img-fluid"></a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="#"><img src="../static/img/mustafa/persona.jpg" alt="ccs_logo"
+                                            class="img-fluid"></a>
+                                </div>
+                            </div>
+                        </div>
 
+                        <!-- for the contact section, we should implement icons, this will do for now -->
+                        <b class="card-text">Contact:</b>
+                        <a href={{data.mustafa.social[0].val}}>{{data.mustafa.social[0].name}}</a>
+                        <a href={{data.mustafa.social[1].val}}>{{data.mustafa.social[1].name}}</a>
+                        <b class="card-text">{{data.mustafa.social[2].value}}</b>
 
-            </div>
-        </div>
+                        <a href="{{ url_for('experience') }}" class="btn btn-lg btn-dark btn-outline-light">
+                            See More! </a>
+                    </div>
+                </div>
             </div>
 
             <!-- Arrow carousel controls -->
@@ -100,7 +145,7 @@
             </a>
         </div>
     </div>
-    </div>
+</div>
 </div>
 
 
