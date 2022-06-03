@@ -1,6 +1,13 @@
 .header {
     height: 200px;
-    background-color: #343a40;
+    /* background-color: #343a40; */
+}
+
+.home-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("https://images.wallpaperscraft.com/image/single/city_night_moon_145265_1920x1080.jpg");
 }
 
 .header-text {
@@ -45,10 +52,15 @@
 }
 
 .intro {
+    position: relative;
+    top: -150px;
     text-align: center;
+    color: white;
 }
 
 .intro-body {
-    margin-top: 20px;
+    margin: auto;
+    margin-bottom: 25px;
     font-size: large;
+   
 }

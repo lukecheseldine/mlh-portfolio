@@ -7,6 +7,7 @@
 {% block title %}{{ title }}{% endblock %}
 
 {% block content %}
+<div class="home-container">
 <div class="header">
     <h1 class="header-text">Welcome to our portfolio!</h1>
 </div>
@@ -14,8 +15,12 @@
 <div class="intro">
     <h1>Introduction</h1>
     <p class="intro-body">Hey everyone! This is Luke, Mustafa, and Sam. We are part of the 22.SUM Batch in the MLH
-        Production Engineering Fellowship. To learn more about us, head over to the About section!<ip></ip>
+        Production Engineering Fellowship. To learn more about us, head over to the About section or click the button below!<ip></ip>
     </p>
+
+    <a href="{{ url_for('about') }}" class="btn btn-lg btn-dark btn-outline-light">
+        Head to About! </a>
+</div>
 </div>
 
 {% endblock %}
