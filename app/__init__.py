@@ -1,9 +1,12 @@
 import os
 from flask import Flask, render_template, request
 from dotenv import load_dotenv
+import json
 
 load_dotenv()
 app = Flask(__name__)
+data = open('app/static/data.json')
+data = json.load(data)
 
 
 @app.route('/')

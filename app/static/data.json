@@ -16,7 +16,8 @@
                 "val" : "https://github.com/SamEThibault"
             },
             {
-                "name" : "sam5thibault@gmail.com"
+                "name" : "Email",
+                "value" : "sam5thibault@gmail.com"
             }
         ]
     },
@@ -38,7 +39,8 @@
                 "val" : "https://github.com/Mustaballer"
             },
             {
-                "name" : "mus2003.abdul@gmail.com"
+                "name" : "Email",
+                "value" : "mus2003.abdul@gmail.com"
             }
         ]
     },
@@ -60,7 +62,8 @@
                 "val" : "https://github.com/lukecheseldine"
             },
             {
-                "name" : "luke.cheseldine@mail.utoronto.ca\n"
+                "name" : "Email",
+                "value" : "luke.cheseldine@mail.utoronto.ca"
             }
         ]
     }
