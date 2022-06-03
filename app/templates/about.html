@@ -57,35 +57,91 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
+</div>
 
-    <div class="about-sam">
-        <h3>{{data.sam.name}}</h3>
-        <h5>{{data.sam.about}}</h5>
-        <h5>Education: {{data.sam.education}}</h5>
-        <h5>I enjoy {{data.sam.hobbies}}</h5>
-        <h5>You can reach me on: {{data.sam.social[0].name}}, {{data.sam.social[1].name}}, {{data.sam.social[2].name}}
-        </h5>
+<!-- Expected to send this data to a bootstrap element for better final result. -->
+<div class="about-sam">
+    <h3>{{data.sam.name}}</h3>
+    <h5>{{data.sam.about}}</h5>
+    <h5>Education: {{data.sam.education}}</h5>
+    <h5>I enjoy {{data.sam.hobbies}}</h5>
+    <h5>You can reach me on: {{data.sam.social[0].name}}, {{data.sam.social[1].name}}, {{data.sam.social[2].name}}
+    </h5>
+</div>
+
+
+<div class="about-mustafa">
+    <h3>{{data.mustafa.name}}</h3>
+    <h5>{{data.mustafa.about}}</h5>
+    <h5>Education: {{data.mustafa.education}}</h5>
+    <h5>I enjoy {{data.mustafa.hobbies}}</h5>
+    <h5>You can reach me on: {{data.mustafa.social[0].name}}, {{data.mustafa.social[1].name}},
+        {{data.mustafa.social[2].name}}
+    </h5>
+</div>
+
+<!-- Cards displaying individual information -->
+<div class="card-group">
+
+    <div class="card">
+        <img class="card-img-top-luke" src="../static/img/luke/luke_jacket.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">{{data.luke.name}}</h5>
+            <p class="card-text">{{data.luke.about}}</p>
+            <b class="card-text">Education:</b>
+            <p class="card-text">{{data.luke.education}}</p>
+            <b class="card-text">Hobbies:</b>
+            <p class="card-text">I enjoy {{data.luke.hobbies}}</p>
+
+            <!-- for the contact section, we should implement icons, this will do for now -->
+            <b class="card-text">Contact:</b>
+            <a href={{data.luke.social[0].val}}>{{data.luke.social[0].name}}</a>
+            <a href={{data.luke.social[1].val}}>{{data.luke.social[1].name}}</a>
+            <b class="card-text">{{data.luke.social[2].value}}</b>
+
+        </div>
     </div>
 
-    <div class="about-luke">
-        <h3>{{data.luke.name}}</h3>
-        <h5>{{data.luke.about}}</h5>
-        <h5>Education: {{data.luke.education}}</h5>
-        <h5>I enjoy {{data.luke.hobbies}}</h5>
-        <h5>You can reach me on: {{data.luke.social[0].name}}, {{data.luke.social[1].name}},
-            {{data.luke.social[2].name}}
-        </h5>
+    <div class="card">
+        <img class="card-img-top-sam" src="../static/img/sam/samSelfie.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">{{data.sam.name}}</h5>
+            <p class="card-text">{{data.sam.about}}</p>
+            <b class="card-text">Education:</b>
+            <p class="card-text">{{data.sam.education}}</p>
+            <b class="card-text">Hobbies:</b>
+            <p class="card-text">I enjoy {{data.sam.hobbies}}</p>
+
+            <!-- for the contact section, we should implement icons, this will do for now -->
+            <b class="card-text">Contact:</b>
+            <a href={{data.sam.social[0].val}}>{{data.sam.social[0].name}}</a>
+            <a href={{data.sam.social[1].val}}>{{data.sam.social[1].name}}</a>
+            <b class="card-text">{{data.sam.social[2].value}}</b>
+
+        </div>
     </div>
 
-    <div class="about-mustafa">
-        <h3>{{data.mustafa.name}}</h3>
-        <h5>{{data.mustafa.about}}</h5>
-        <h5>Education: {{data.mustafa.education}}</h5>
-        <h5>I enjoy {{data.mustafa.hobbies}}</h5>
-        <h5>You can reach me on: {{data.mustafa.social[0].name}}, {{data.mustafa.social[1].name}},
-            {{data.mustafa.social[2].name}}
-        </h5>
+    <div class="card">
+        <img class="card-img-top-mustafa" src="../static/img/mustafa/mustafa_profile.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">{{data.mustafa.name}}</h5>
+            <p class="card-text">{{data.mustafa.about}}</p>
+            <b class="card-text">Education:</b>
+            <p class="card-text">{{data.mustafa.education}}</p>
+            <b class="card-text">Hobbies:</b>
+            <p class="card-text">I enjoy {{data.mustafa.hobbies}}</p>
+
+            <!-- for the contact section, we should implement icons, this will do for now -->
+            <b class="card-text">Contact:</b>
+            <a href={{data.mustafa.social[0].val}}>{{data.mustafa.social[0].name}}</a>
+            <a href={{data.mustafa.social[1].val}}>{{data.mustafa.social[1].name}}</a>
+            <b class="card-text">{{data.mustafa.social[2].value}}</b>
+
+
+        </div>
     </div>
+</div>
+
 
 </div>
 

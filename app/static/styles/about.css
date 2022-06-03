@@ -35,3 +35,22 @@
     height: 110px;
 }
 
+.card-img-top-luke {
+    width: 100%;
+    height: 40vw;
+    object-fit: cover;
+}
+
+.card-img-top-sam {
+    width: 100%;
+    height: 40vw;
+    object-fit: cover;
+}
+
+.card-img-top-mustafa {
+    width: 100%;
+    height: 40vw;
+    object-fit: cover;
+}
+
+
