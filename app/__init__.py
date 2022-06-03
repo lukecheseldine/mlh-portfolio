@@ -11,17 +11,17 @@ data = json.load(data)
 
 @app.route('/')
 def index():
-    return render_template('index.html', title="LMS Portfolio", url=os.getenv("URL"))
+    return render_template('index.html', title="LMS Portfolio", url=os.getenv("URL"), data=data)
 
 @app.route('/about')
 def about():
-    return render_template('about.html', title="LMS Portfolio", url=os.getenv("URL"))
+    return render_template('about.html', title="LMS Portfolio", url=os.getenv("URL"), data=data)
 
 @app.route('/experience')
 def experience():
-    return render_template('experience.html', title="LMS Portfolio", url=os.getenv("URL"))
+    return render_template('experience.html', title="LMS Portfolio", url=os.getenv("URL"), data=data)
 
 @app.route('/map')
 def map():
-    return render_template('map.html', title="LMS Portfolio", url=os.getenv("URL"))
+    return render_template('map.html', title="LMS Portfolio", url=os.getenv("URL"), data=data)
 
