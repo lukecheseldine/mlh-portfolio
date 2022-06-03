@@ -58,11 +58,19 @@
 
     <div id="content">{% block content %}{% endblock %}</div>
 
-    <div id="footer">
-        {% block footer %}
-        &copy; Copyright 2022 by Luke, Mustafa, and Sam.
-        {% endblock %}
-    </div>
+    {% block footer %}
+                <!-- Footer -->
+        <footer class=" text-center text-white" style="background-color:#0C1917;">
+
+          <!-- Copyright -->
+          <div class="text-center p-3">
+            © 2022 Luke, Mustafa, Sam
+          </div>
+          <!-- Copyright -->
+
+        </footer>
+        <!-- Footer -->
+    {% endblock %}
 
 
     <!-- Required Jquery, Popper.js, Bootstrap scripts for drop-down animation -->
