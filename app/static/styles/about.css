@@ -58,12 +58,10 @@
 }
 
 .card-group {
-    width: 100rem;
-    position: relative;
-    left: 8%;
+    margin: auto;
+    text-align: center;
 }
 
 .card {
-    margin: 20px;
-    border-radius: 20%;
+    margin: 40px;
 }

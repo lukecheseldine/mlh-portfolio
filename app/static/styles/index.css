@@ -59,5 +59,8 @@
 }
 
 .intro-body {
+    margin: auto;
+    margin-bottom: 25px;
     font-size: large;
+   
 }
