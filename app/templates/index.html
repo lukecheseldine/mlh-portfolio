@@ -2,6 +2,7 @@
 
 {% block head %}
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}">
+    <script src="{{ url_for('static', filename='scripts/index.js') }}" defer></script>
 {% endblock %}
 
 {% block title %}{{ title }}{% endblock %}
@@ -11,7 +12,10 @@
     <div class="background">
 
         <div class="home-container">
-            <h1>Welcome to our portfolio!</h1>
+            <h1>Welcome to
+                <span class="txt-type" data-wait="2000" data-words='["Luke", "Mustafa", "Sam", "Team Jungle"]'></span>
+            </h1>
+            <h2>MLH fellowship hackathon portfolio</h2>
             <button>Continue</button>
         </div>
 
