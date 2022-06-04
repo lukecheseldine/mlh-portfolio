@@ -18,7 +18,7 @@
             },
             {
                 "name": "Email",
-                "value": "sam5thibault@gmail.com"
+                "val": "sam5thibault@gmail.com"
             }
         ]
     },
@@ -41,7 +41,7 @@
             },
             {
                 "name": "Email",
-                "value": "mus2003.abdul@gmail.com"
+                "val": "mus2003.abdul@gmail.com"
             }
         ]
     },
@@ -64,7 +64,7 @@
             },
             {
                 "name": "Email",
-                "value": "luke.cheseldine@mail.utoronto.ca"
+                "val": "luke.cheseldine@mail.utoronto.ca"
             }
         ]
     }
