@@ -9,9 +9,9 @@
 }
 
 /* if we want the card text centered: */
-/* .carousel-item {
+.carousel-item {
     text-align: center;
-} */
+}
 
 .card-img-top-luke {
     width: 100%;
