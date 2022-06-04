@@ -31,17 +31,17 @@
     object-fit: cover;
 }
 
-/* .card {
+.card {
     margin-left: 25%;
     margin-right: 25%;
     margin-top: 5%;
     margin-bottom: 5%;
-} */
-
-
-.card {
-    margin: 40px;
 }
+
+
+/* .card {
+    margin: 40px;
+} */
 
 .card-body i {
     text-rendering: optimizeLegibility;
@@ -56,6 +56,5 @@
 }
 
 .card-body i:hover {
-    color:#1D341F;
+    color: #1D341F;
 }
-

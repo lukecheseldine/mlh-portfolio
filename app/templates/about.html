@@ -3,8 +3,8 @@
 {% block title %}{{ title }}{% endblock %}
 
 {% block head %}
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/about.css') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/about.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 {% endblock %}
 
 {% block content %}
@@ -23,8 +23,8 @@
             <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
         </ol>
 
-            <!-- carousel items -->
-            <div class="carousel-inner">
+        <!-- carousel items -->
+        <div class="carousel-inner">
 
             <div class="carousel-item active">
                 <div class="card">
@@ -50,17 +50,17 @@
                             </div>
                         </div>
 
-                     <b class="card-text">Contact:</b>
-                    <br>
-                    <a href={{ data.luke.social[0].val }}>
-                        <i class="fa fa-linkedin-square"></i>
-                    </a>
-                    <a href={{ data.luke.social[1].val }}>
-                        <i class="fa fa-github"></i>
-                    </a>
-                    <a href="mailto:{{ data.luke.social[2].val }}">
-                        <i class="fa fa-envelope"></i>
-                    </a>
+                        <b class="card-text">Contact:</b>
+                        <br>
+                        <a href={{ data.luke.social[0].val }}>
+                            <i class="fa fa-linkedin-square"></i>
+                        </a>
+                        <a href={{ data.luke.social[1].val }}>
+                            <i class="fa fa-github"></i>
+                        </a>
+                        <a href="mailto:{{ data.luke.social[2].val }}">
+                            <i class="fa fa-envelope"></i>
+                        </a>
 
 
                         <a href="{{ url_for('experience') }}" class="btn btn-lg btn-dark btn-outline-light">
@@ -93,17 +93,17 @@
                             </div>
                         </div>
 
-                    <b class="card-text">Contact:</b>
-                    <br>
-                    <a href={{ data.sam.social[0].val }}>
-                        <i class="fa fa-linkedin-square"></i>
-                    </a>
-                    <a href={{ data.sam.social[1].val }}>
-                        <i class="fa fa-github"></i>
-                    </a>
-                    <a href="mailto:{{ data.sam.social[2].val }}">
-                        <i class="fa fa-envelope"></i>
-                    </a>
+                        <b class="card-text">Contact:</b>
+                        <br>
+                        <a href={{ data.sam.social[0].val }}>
+                            <i class="fa fa-linkedin-square"></i>
+                        </a>
+                        <a href={{ data.sam.social[1].val }}>
+                            <i class="fa fa-github"></i>
+                        </a>
+                        <a href="mailto:{{ data.sam.social[2].val }}">
+                            <i class="fa fa-envelope"></i>
+                        </a>
 
                         <a href="{{ url_for('experience') }}" class="btn btn-lg btn-dark btn-outline-light">
                             See More! </a>
@@ -136,17 +136,17 @@
                             </div>
                         </div>
 
-                    <b class="card-text">Contact:</b>
-                    <br>
-                    <a href={{ data.mustafa.social[0].val }}>
-                        <i class="fa fa-linkedin-square"></i>
-                    </a>
-                    <a href={{ data.mustafa.social[1].val }}>
-                        <i class="fa fa-github"></i>
-                    </a>
-                    <a href="mailto:{{ data.mustafa.social[2].val }}">
-                        <i class="fa fa-envelope"></i>
-                    </a>
+                        <b class="card-text">Contact:</b>
+                        <br>
+                        <a href={{ data.mustafa.social[0].val }}>
+                            <i class="fa fa-linkedin-square"></i>
+                        </a>
+                        <a href={{ data.mustafa.social[1].val }}>
+                            <i class="fa fa-github"></i>
+                        </a>
+                        <a href="mailto:{{ data.mustafa.social[2].val }}">
+                            <i class="fa fa-envelope"></i>
+                        </a>
 
                         <a href="{{ url_for('experience') }}" class="btn btn-lg btn-dark btn-outline-light">
                             See More! </a>
@@ -154,8 +154,16 @@
                 </div>
             </div>
         </div>
-
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"></span>
+        </button>
     </div>
+
 </div>
-</div>
+
 {% endblock %}
