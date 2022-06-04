@@ -58,3 +58,15 @@
 .card-body i:hover {
     color: #1D341F;
 }
+
+.img-hobby1 {
+    max-height:75%;
+
+    overflow: hidden;
+}
+
+.img-hobby2 {
+    max-height:75%;
+  
+    overflow: hidden;
+}
