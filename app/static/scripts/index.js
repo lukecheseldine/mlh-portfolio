@@ -1,4 +1,4 @@
-const TypeWriter = function(txtElement, words, wait = 2000) {
+const TypeWriter = function(txtElement, words, wait = 1500) {
     this.txtElement = txtElement;
     this.words = words
     this.txt = '';
@@ -22,7 +22,7 @@ TypeWriter.prototype.type = function () {
 
     this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
 
-    let typeSpeed = 300;
+    let typeSpeed = 150;
 
     if (this.isDeleting) typeSpeed /= 2;
 
@@ -38,11 +38,18 @@ TypeWriter.prototype.type = function () {
     }
 
     if (this.done) {
-        return
+        setTimeout(() => {
+            this.txtElement.classList.toggle('blink');
+        }, 1800);
+        return;
     }
     else {
         setTimeout(() => this.type(), typeSpeed)
     }
+}
+
+function delay(time) {
+  return new Promise(resolve => setTimeout(resolve, time));
 }
 
 //Init App
@@ -54,4 +61,4 @@ function init() {
     new TypeWriter(txtElement, words, wait);
 }
 
-init();
+setTimeout(init, 1000)
