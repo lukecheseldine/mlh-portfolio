@@ -31,11 +31,31 @@
     object-fit: cover;
 }
 
-.card {
+/* .card {
     margin-left: 25%;
     margin-right: 25%;
     margin-top: 5%;
     margin-bottom: 5%;
+} */
+
+
+.card {
+    margin: 40px;
 }
 
+.card-body i {
+    text-rendering: optimizeLegibility;
+    font-size: 25px;
+    color: #738F75;
+    margin: 0.5em;
+    border: none;
+}
+
+.card-body a {
+    text-decoration: none;
+}
+
+.card-body i:hover {
+    color:#1D341F;
+}
 
