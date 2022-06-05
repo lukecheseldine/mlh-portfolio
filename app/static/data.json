@@ -23,19 +23,19 @@
         ],
         "projects": [
             {
-                "name": "project 1",
-                "link": "",
-                "desc": "desc 1"
+                "name": "Time Savior",
+                "link": "https://github.com/SamEThibault/time-savior",
+                "desc": "Spring Boot web application that suggests days to complete your weekly tasks based on your schedule"
             },
             {
-                "name": "project 2",
-                "link": "",
-                "desc": "desc 2"
+                "name": "CookHack",
+                "link": "https://github.com/SamEThibault/cook-hack",
+                "desc": "React.Js web application that suggests recipes to cook based on available ingredients"
             },
             {
-                "name": "project 3",
-                "link": "",
-                "desc": "desc 3"
+                "name": "Mongo Wheels",
+                "link": "https://github.com/SamEThibault/mongo-wheels",
+                "desc": "Spring Boot web application with a MongoDB database which allows users to access automobile data"
             }
         ]
     },
@@ -64,17 +64,17 @@
         "projects": [
             {
                 "name": "NCAR",
-                "link": "",
+                "link": "https://github.com/Mustaballer/NCAR",
                 "desc": "Infrared nighttime collision avoidance system"
             },
             {
                 "name": "MyJikanBot",
-                "link": "",
+                "link": "https://github.com/Mustaballer/MyJikanBot",
                 "desc": "MYJIKANBOT is a discord bot that retrieves and delivers your favorite anime or manga"
             },
             {
                 "name": "ChillChat",
-                "link": "",
+                "link": "https://github.com/Mustaballer/ChillChat",
                 "desc": "Chat web app supporting chat rooms with chill music and a gorgeous background"
             }
         ]

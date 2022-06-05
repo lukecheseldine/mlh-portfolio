@@ -78,7 +78,7 @@
                         <div class="projects">
                             <div class="project">
                                 <h5>{{ data.mustafa.projects[0].name }}</h5>
-                                <a href="{{ data.mustafa.projects[2].link }}">
+                                <a href="{{ data.mustafa.projects[0].link }}">
                                     <div class="wrap">
                                         <img src="{{ url_for('static', filename='img/mustafa/NCAR.png')}}" alt="">
                                         <div class="desc">{{ data.mustafa.projects[0].desc }}</div>
@@ -120,15 +120,30 @@
                         <div class="projects">
                             <div class="project">
                                 <h5>{{ data.sam.projects[0].name }}</h5>
-                                <div class="blue placeholder-box"></div>
+                                <a href="{{ data.sam.projects[0].link }}">
+                                    <div class="wrap">
+                                        <img src="{{ url_for('static', filename='img/sam/TimeSavior.png')}}" alt="">
+                                        <div class="desc">{{ data.sam.projects[0].desc }}</div>
+                                    </div>
+                                </a>
                             </div>
                             <div class="project">
                                 <h5>{{ data.sam.projects[1].name }}</h5>
-                                <div class="yellow placeholder-box"></div>
+                                <a href="{{ data.sam.projects[2].link }}">
+                                    <div class="wrap">
+                                        <img src="{{ url_for('static', filename='img/sam/CookHack.png')}}" alt="">
+                                        <div class="desc">{{ data.sam.projects[1].desc }}</div>
+                                    </div>
+                                </a>
                             </div>
                             <div class="project">
                                 <h5>{{ data.sam.projects[2].name }}</h5>
-                                <div class="red placeholder-box"></div>
+                                <a href="{{ data.sam.projects[2].link }}">
+                                    <div class="wrap">
+                                        <img src="{{ url_for('static', filename='img/sam/car.png')}}" alt="">
+                                        <div class="desc">{{ data.sam.projects[2].desc }}</div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
