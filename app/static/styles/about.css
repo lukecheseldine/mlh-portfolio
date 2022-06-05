@@ -1,5 +1,5 @@
 .about-container {
-    background-image: url("../img/background.jpg") ;
+    background-image: url("../img/background.jpg");
 }
 
 .header-text {
@@ -61,17 +61,30 @@
 }
 
 .img-hobby1 {
-    max-height:75%;
-
+    max-height: 75%;
     overflow: hidden;
+    border: 1px solid white;
 }
 
 .img-hobby2 {
-    max-height:75%;
-  
+    max-height: 75%;
     overflow: hidden;
+    border: 1px solid white;
 }
 
 .btn {
     background-color: #0C1917 !important;
+}
+
+.luke-hobby-imgs {
+    margin-bottom: -110px;
+}
+
+.sam-hobby-imgs {
+    margin-bottom: -70px;
+    margin-left: 30px;
+}
+
+.mus-hobby-imgs {
+    margin-bottom: -80px;
 }
