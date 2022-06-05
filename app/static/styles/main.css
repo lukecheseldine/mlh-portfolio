@@ -19,8 +19,9 @@ body {
 }
 
 .nav-logo img {
-    width: 210px;
+    width: 70px;
     margin-right: 30px;
+    margin-left: 10px;
 }
 
 .intro,
@@ -28,4 +29,13 @@ body {
 .experience,
 .map {
     margin-top: 300px;
+}
+
+.navbar{
+    background-color: #0C1917 !important;
+    color: white;
+}
+
+.navbar-brand {
+    
 }
