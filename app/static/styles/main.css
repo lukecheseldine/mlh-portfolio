@@ -22,10 +22,3 @@ body {
     width: 210px;
     margin-right: 30px;
 }
-
-.intro,
-.about,
-.experience,
-.map {
-    margin-top: 300px;
-}
