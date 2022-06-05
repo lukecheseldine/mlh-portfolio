@@ -1,18 +1,88 @@
 {% extends "base.html" %}
 
 {% block head %}
-<link rel="stylesheet" href="{{ url_for('static', filename='styles/experience.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/experience.css') }}">
 {% endblock %}
 
 {% block title %}{{ title }}{% endblock %}
 
 {% block content %}
-<h1>Experience</h1>
-<div class="experience">
+    <div class="background">
+        <div class="mask">
 
-    <!-- Expected to send this data to a bootstrap element for better final result. -->
-    <h3 class="experience-sam">Sam: {{data.sam.work_experience}}</h3>
-    <h3 class="experience-luke">Luke: {{data.luke.work_experience}}</h3>
-    <h3 class="experience-mustafa">Mustafa: {{data.mustafa.work_experience}}</h3>
-</div>
+            <h1>Experience</h1>
+
+            <div class="guidance">
+                <ul>
+                    <li>Luke</li>
+                    <li>Mustafa</li>
+                    <li>Sam</li>
+                </ul>
+            </div>
+
+            <div class="experience">
+                <div class="luke">
+                    <h3 class="experience-luke">Luke: {{data.luke.work_experience}}</h3>
+                    <div class="projects">
+                        <div class="project">
+                            <h5>Project 1</h5>
+                            <div class="blue placeholder-box"></div>
+                        </div>
+                        <div class="project">
+                            <h5>Project 2</h5>
+                            <div class="yellow placeholder-box"></div>
+                        </div>
+                        <div class="project">
+                            <h5>Project 3</h5>
+                            <div class="red placeholder-box"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="mustafa">
+                    <h3 class="experience-mustafa">Mustafa: {{data.mustafa.work_experience}}</h3>
+                    <div class="projects">
+                        <div class="project">
+                            <h5>Project 1</h5>
+                            <div class="blue placeholder-box"></div>
+                        </div>
+                        <div class="project">
+                            <h5>Project 2</h5>
+                            <div class="yellow placeholder-box"></div>
+                        </div>
+                        <div class="project">
+                            <h5>Project 3</h5>
+                            <div class="red placeholder-box"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="sam">
+                    <h3 class="experience-sam">Sam: {{data.sam.work_experience}}</h3>
+                    <div class="projects">
+                        <div class="project">
+                            <h5>Project 1</h5>
+                            <div class="blue placeholder-box"></div>
+                        </div>
+                        <div class="project">
+                            <h5>Project 2</h5>
+                            <div class="yellow placeholder-box"></div>
+                        </div>
+                        <div class="project">
+                            <h5>Project 3</h5>
+                            <div class="red placeholder-box"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+        <!-- Expected to send this data to a bootstrap element for better final result. -->
+
+
+
+    </div>
 {% endblock %}
