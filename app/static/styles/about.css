@@ -1,5 +1,10 @@
 .about-container {
     background-image: url("../img/background.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+
 }
 
 .header-text {
@@ -17,17 +22,21 @@
     width: 100%;
     height: 45vw;
     object-fit: cover;
+    border-radius: 2px;
+
 }
 
 .card-img-top-sam {
     width: 100%;
     height: 45vw;
+    border-radius: 2px;
     object-fit: cover;
 }
 
 .card-img-top-mustafa {
     width: 100%;
     height: 45vw;
+    border-radius: 2px;
     object-fit: cover;
 }
 
@@ -40,9 +49,6 @@
 }
 
 
-/* .card {
-    margin: 40px;
-} */
 
 .card-body i {
     text-rendering: optimizeLegibility;
