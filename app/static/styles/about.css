@@ -1,5 +1,5 @@
 .about-container {
-    background-color: #343a40;
+    background-image: url("../img/background.jpg") ;
 }
 
 .header-text {
@@ -36,6 +36,7 @@
     margin-right: 25%;
     margin-top: 5%;
     margin-bottom: 5%;
+    background-color: #738F75 !important;
 }
 
 
@@ -46,7 +47,7 @@
 .card-body i {
     text-rendering: optimizeLegibility;
     font-size: 25px;
-    color: #738F75;
+    color: #0C1917;
     margin: 0.5em;
     border: none;
 }
@@ -69,4 +70,8 @@
     max-height:75%;
   
     overflow: hidden;
+}
+
+.btn {
+    background-color: #0C1917 !important;
 }
