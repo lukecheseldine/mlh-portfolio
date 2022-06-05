@@ -2,66 +2,71 @@
     background-color: #343a40;
 }
 
-.header {
-    height: 150px;
-    background-color: #343a40;
-}
-
 .header-text {
     text-align: center;
     color: white;
     font-size: 4vw;
-    top: 25px;
 }
 
+/* if we want the card text centered: */
 .carousel-item {
-    height: 300px;
-    background: #343a40;
-    color: white;
     text-align: center;
-}
-
-.selfie-image-sam {
-    border-radius: 50px;
-    width: 100px;
-    height: 100px;
-}
-
-.selfie-image-luke {
-    border-radius: 50px;
-    width: 100px;
-    height: 110px;
-}
-
-.selfie-image-mustafa {
-    border-radius: 50px;
-    width: 90px;
-    height: 110px;
 }
 
 .card-img-top-luke {
     width: 100%;
-    height: 40vw;
+    height: 45vw;
     object-fit: cover;
 }
 
 .card-img-top-sam {
     width: 100%;
-    height: 40vw;
+    height: 45vw;
     object-fit: cover;
 }
 
 .card-img-top-mustafa {
     width: 100%;
-    height: 40vw;
+    height: 45vw;
     object-fit: cover;
 }
 
-.card-group {
-    margin: auto;
-    text-align: center;
+.card {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
-.card {
+
+/* .card {
     margin: 40px;
+} */
+
+.card-body i {
+    text-rendering: optimizeLegibility;
+    font-size: 25px;
+    color: #738F75;
+    margin: 0.5em;
+    border: none;
+}
+
+.card-body a {
+    text-decoration: none;
+}
+
+.card-body i:hover {
+    color: #1D341F;
+}
+
+.img-hobby1 {
+    max-height:75%;
+
+    overflow: hidden;
+}
+
+.img-hobby2 {
+    max-height:75%;
+  
+    overflow: hidden;
 }
