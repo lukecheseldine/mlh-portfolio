@@ -18,13 +18,13 @@
             },
             {
                 "name": "Email",
-                "value": "sam5thibault@gmail.com"
+                "val": "sam5thibault@gmail.com"
             }
         ]
     },
     "mustafa": {
         "name": "Mustafa Abdulrahman",
-        "about": "Hey, I'm Mustafa, I'm from Milton, Ontario and am studying in Toronto, ON. I have experience in full stack development and keen on learning about complicated systems",
+        "about": "Hey, I'm Mustafa, I'm from Milton, Ontario and am studying in Toronto, ON. I have experience in full stack development and keen on learning about complicated systems.",
         "about_short": "Hey, I'm Mustafa, I'm from Milton, Ontario and am studying in Toronto, ON.",
         "education": "Rising sophomore studying computer engineering at University of Toronto",
         "work_experience": "STEM Educator intern, IEEE Web PM",
@@ -41,7 +41,7 @@
             },
             {
                 "name": "Email",
-                "value": "mus2003.abdul@gmail.com"
+                "val": "mus2003.abdul@gmail.com"
             }
         ]
     },
@@ -64,7 +64,7 @@
             },
             {
                 "name": "Email",
-                "value": "luke.cheseldine@mail.utoronto.ca"
+                "val": "luke.cheseldine@mail.utoronto.ca"
             }
         ]
     }
