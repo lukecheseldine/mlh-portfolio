@@ -25,7 +25,13 @@ body {
 
 .intro,
 .about,
-.experience,
-.map {
+.experience {
     margin-top: 300px;
 }
+
+.folium {
+    display: flex;
+    justify-content: center;
+    background-image: url("../img/map_background.jpg");
+}
+

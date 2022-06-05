@@ -1,15 +1,253 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f00976e31104b9bfdced2ddef29d46e6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f00976e31104b9bfdced2ddef29d46e6" ></div>
+        
+</body>
+<script>    
+    
+            var map_f00976e31104b9bfdced2ddef29d46e6 = L.map(
+                "map_f00976e31104b9bfdced2ddef29d46e6",
+                {
+                    center: [43.653, -79.383],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
 
-{% block head %}
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/map.css') }}">
-{% endblock %}
+            
 
-{% block title %}{{ title }}{% endblock %}
+        
+    
+            var tile_layer_33ab25c7b517d9c0366a01191356c1e8 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f00976e31104b9bfdced2ddef29d46e6);
+        
+    
+            var marker_25440907afd29ce918b5f52f7f7c3970 = L.marker(
+                [20.77025, -156.239304],
+                {}
+            ).addTo(map_f00976e31104b9bfdced2ddef29d46e6);
+        
+    
+        var popup_1732bb357d8c1277e05b232bce25c864 = L.popup({"maxWidth": "100%"});
 
-{% block content %}
-    <h1>Map</h1>
+        
+            var html_b9ab7b639c6ecd1453e8e7a92e28342c = $(`<div id="html_b9ab7b639c6ecd1453e8e7a92e28342c" style="width: 100.0%; height: 100.0%;">Haleakala National Park, Hawaii</div>`)[0];
+            popup_1732bb357d8c1277e05b232bce25c864.setContent(html_b9ab7b639c6ecd1453e8e7a92e28342c);
+        
 
-    <div class="map">
-        <h2>This is where we'll put the map. Should be pretty sick...</h2>
-    </div>
-{% endblock %}
+        marker_25440907afd29ce918b5f52f7f7c3970.bindPopup(popup_1732bb357d8c1277e05b232bce25c864)
+        ;
+
+        
+    
+    
+            var marker_c910bb78a3a066e66c3fbc7115f03aab = L.marker(
+                [41.546322, 2.44775],
+                {}
+            ).addTo(map_f00976e31104b9bfdced2ddef29d46e6);
+        
+    
+        var popup_9adcc3154e420dc4157ec0d4fbf122fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eec143fe4d271a509d547d2953f29fef = $(`<div id="html_eec143fe4d271a509d547d2953f29fef" style="width: 100.0%; height: 100.0%;">La Sagrada Familia, Spain</div>`)[0];
+            popup_9adcc3154e420dc4157ec0d4fbf122fd.setContent(html_eec143fe4d271a509d547d2953f29fef);
+        
+
+        marker_c910bb78a3a066e66c3fbc7115f03aab.bindPopup(popup_9adcc3154e420dc4157ec0d4fbf122fd)
+        ;
+
+        
+    
+    
+            var marker_28754cb48472e4280d799f8108014b89 = L.marker(
+                [50.8169, -0.1367],
+                {}
+            ).addTo(map_f00976e31104b9bfdced2ddef29d46e6);
+        
+    
+        var popup_91b1161c84c984c588ca5c2ca3b20ff6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_89e74c7a1a627cf2ddde5771ac485819 = $(`<div id="html_89e74c7a1a627cf2ddde5771ac485819" style="width: 100.0%; height: 100.0%;">Brighton Palace Pier, UK</div>`)[0];
+            popup_91b1161c84c984c588ca5c2ca3b20ff6.setContent(html_89e74c7a1a627cf2ddde5771ac485819);
+        
+
+        marker_28754cb48472e4280d799f8108014b89.bindPopup(popup_91b1161c84c984c588ca5c2ca3b20ff6)
+        ;
+
+        
+    
+    
+            var marker_f1b47bdc30f57658da98278c853bb381 = L.marker(
+                [43.790428, -110.681763],
+                {}
+            ).addTo(map_f00976e31104b9bfdced2ddef29d46e6);
+        
+    
+        var popup_2aa17f335454fa871e4fc2816b1245fb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a22340466e318accff7b6c55b3134cf0 = $(`<div id="html_a22340466e318accff7b6c55b3134cf0" style="width: 100.0%; height: 100.0%;">Grand Teton National Park, USA</div>`)[0];
+            popup_2aa17f335454fa871e4fc2816b1245fb.setContent(html_a22340466e318accff7b6c55b3134cf0);
+        
+
+        marker_f1b47bdc30f57658da98278c853bb381.bindPopup(popup_2aa17f335454fa871e4fc2816b1245fb)
+        ;
+
+        
+    
+    
+            var marker_d53feed0d3402e9b5492620a25d81afc = L.marker(
+                [28.538336, -81.379234],
+                {}
+            ).addTo(map_f00976e31104b9bfdced2ddef29d46e6);
+        
+    
+        var popup_cdead62428631b0cb5cc009b65fbd805 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b74caf3167f9dec42a02ef8f3d6b58c = $(`<div id="html_9b74caf3167f9dec42a02ef8f3d6b58c" style="width: 100.0%; height: 100.0%;">Orlando, Florida, USA</div>`)[0];
+            popup_cdead62428631b0cb5cc009b65fbd805.setContent(html_9b74caf3167f9dec42a02ef8f3d6b58c);
+        
+
+        marker_d53feed0d3402e9b5492620a25d81afc.bindPopup(popup_cdead62428631b0cb5cc009b65fbd805)
+        ;
+
+        
+    
+    
+            var marker_749262b86d2ced0e282fc232ad809a94 = L.marker(
+                [40.7127281, -74.0060152],
+                {}
+            ).addTo(map_f00976e31104b9bfdced2ddef29d46e6);
+        
+    
+        var popup_23a34edb86701a95adad04309ded8080 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3eae28cd832ecb2214119223c109bbcd = $(`<div id="html_3eae28cd832ecb2214119223c109bbcd" style="width: 100.0%; height: 100.0%;">New York City, USA</div>`)[0];
+            popup_23a34edb86701a95adad04309ded8080.setContent(html_3eae28cd832ecb2214119223c109bbcd);
+        
+
+        marker_749262b86d2ced0e282fc232ad809a94.bindPopup(popup_23a34edb86701a95adad04309ded8080)
+        ;
+
+        
+    
+    
+            var marker_0b9ff0bbbb4177df73c04488ca7ac7ce = L.marker(
+                [46.829853, -71.254028],
+                {}
+            ).addTo(map_f00976e31104b9bfdced2ddef29d46e6);
+        
+    
+        var popup_bca069a74373237c03e4b038951f42cc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d6d0a15f5e4930bad8f2a323e6067f3a = $(`<div id="html_d6d0a15f5e4930bad8f2a323e6067f3a" style="width: 100.0%; height: 100.0%;">Quebec City, Canada</div>`)[0];
+            popup_bca069a74373237c03e4b038951f42cc.setContent(html_d6d0a15f5e4930bad8f2a323e6067f3a);
+        
+
+        marker_0b9ff0bbbb4177df73c04488ca7ac7ce.bindPopup(popup_bca069a74373237c03e4b038951f42cc)
+        ;
+
+        
+    
+    
+            var marker_6d7fbfa5e9296bc5f4a7eb9b6a9c408a = L.marker(
+                [45.5017, -73.5673],
+                {}
+            ).addTo(map_f00976e31104b9bfdced2ddef29d46e6);
+        
+    
+        var popup_1f08ff83294c91ac83fd0c3482ca7998 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd276dfdb5713a227af031a646dd795c = $(`<div id="html_cd276dfdb5713a227af031a646dd795c" style="width: 100.0%; height: 100.0%;">Montreal, Canada</div>`)[0];
+            popup_1f08ff83294c91ac83fd0c3482ca7998.setContent(html_cd276dfdb5713a227af031a646dd795c);
+        
+
+        marker_6d7fbfa5e9296bc5f4a7eb9b6a9c408a.bindPopup(popup_1f08ff83294c91ac83fd0c3482ca7998)
+        ;
+
+        
+    
+    
+            var marker_81a1bd078a3a64865b87cddce72f1777 = L.marker(
+                [17.385, 78.4867],
+                {}
+            ).addTo(map_f00976e31104b9bfdced2ddef29d46e6);
+        
+    
+        var popup_e0b5ceceff85d0fe21834e1030a6aee6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8d541ffd5576f4e1dddab39086104265 = $(`<div id="html_8d541ffd5576f4e1dddab39086104265" style="width: 100.0%; height: 100.0%;">Hyderabad, India</div>`)[0];
+            popup_e0b5ceceff85d0fe21834e1030a6aee6.setContent(html_8d541ffd5576f4e1dddab39086104265);
+        
+
+        marker_81a1bd078a3a64865b87cddce72f1777.bindPopup(popup_e0b5ceceff85d0fe21834e1030a6aee6)
+        ;
+
+        
+    
+    
+            var marker_78ddcdbcb6dbaaca3b4270a2b62b0094 = L.marker(
+                [25.2854, 51.531],
+                {}
+            ).addTo(map_f00976e31104b9bfdced2ddef29d46e6);
+        
+    
+        var popup_174ee8138c40a4cd17580590a3db3ea7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2f7c84a990531cc43f3f9f97aa0eeba1 = $(`<div id="html_2f7c84a990531cc43f3f9f97aa0eeba1" style="width: 100.0%; height: 100.0%;">Doha Qatar</div>`)[0];
+            popup_174ee8138c40a4cd17580590a3db3ea7.setContent(html_2f7c84a990531cc43f3f9f97aa0eeba1);
+        
+
+        marker_78ddcdbcb6dbaaca3b4270a2b62b0094.bindPopup(popup_174ee8138c40a4cd17580590a3db3ea7)
+        ;
+
+        
+    
+</script>
