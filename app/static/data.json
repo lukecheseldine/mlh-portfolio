@@ -24,14 +24,17 @@
         "projects": [
             {
                 "name": "project 1",
+                "link": "",
                 "desc": "desc 1"
             },
             {
                 "name": "project 2",
+                "link": "",
                 "desc": "desc 2"
             },
             {
                 "name": "project 3",
+                "link": "",
                 "desc": "desc 3"
             }
         ]
@@ -61,14 +64,17 @@
         "projects": [
             {
                 "name": "NCAR",
+                "link": "",
                 "desc": "Infrared nighttime collision avoidance system"
             },
             {
                 "name": "MyJikanBot",
+                "link": "",
                 "desc": "MYJIKANBOT is a discord bot that retrieves and delivers your favorite anime or manga"
             },
             {
                 "name": "ChillChat",
+                "link": "",
                 "desc": "Chat web app supporting chat rooms with chill music and a gorgeous background"
             }
         ]
@@ -98,14 +104,17 @@
         "projects": [
             {
                 "name": "Sudoku Solver",
+                "link": "https://github.com/lukecheseldine/SudokuSolver",
                 "desc": "Python sudoku solver to instantly solve 9x9 boards"
             },
             {
                 "name": "SoundSearch",
+                "link": "https://github.com/lukecheseldine/SoundSearch",
                 "desc": "Flask app to recommend local concerts based on user's music taste"
             },
             {
                 "name": "Etch-a-Sketch",
+                "link": "https://github.com/lukecheseldine/etch-a-sketch",
                 "desc": "Drawing app available in the browser"
             }
         ]
