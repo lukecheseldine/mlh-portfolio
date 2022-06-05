@@ -5,12 +5,9 @@
 .background {
     background: url("../img/background.jpg") no-repeat center center / cover;
     height: 100%;
-
-    /* Center and scale the image nicely */
     background-position: center;
     background-repeat: repeat-y;
     background-size: cover;
-
 }
 
 .mask {
@@ -21,7 +18,7 @@
     flex-direction: column;
     align-items: center;
     gap: 50px;
-    padding: 100px;
+    padding: 50px;
     color: white;
 }
 
@@ -41,18 +38,49 @@
     margin: 0;
 }
 
-.experience {
+.main {
+    display: flex;
+    flex-wrap: nowrap;
     height: fit-content;
     padding: 20px;
-    border-radius: 25px;
-    background-color: #738F75;
     color: white;
-    border: #1D341F 5px solid;
+    gap: 75px;
+}
+
+.left ul {
+    white-space: nowrap;
+    position: sticky;
+    top: 50%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.left ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+}
+
+.center {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 50px;
+    align-items: flex-start;
 }
+
+.right {
+    height: fit-content;
+    position: sticky;
+    top: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    .left, .right {
+      display: none;
+    }
+  }
 
 .yellow {
     background-color: yellow;
@@ -75,20 +103,49 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    align-items: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.seperate {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.headshot {
+    height: 200px;
+    border-radius: 150px;
+    border: 1px solid white;
 }
 
 .projects {
     display: flex;
+    width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+
 }
 
 .project {
     display: flex;
+    flex: 1;
     flex-direction: column;
     gap: 10px;
     align-items: center;
+}
+
+.project img {
+    object-fit: cover;
+    height: 150px;
+    width: 150px;
+    border: 1px solid white;
 }

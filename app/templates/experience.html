@@ -12,77 +12,103 @@
 
             <h1>Experience</h1>
 
-            <div class="guidance">
-                <ul>
-                    <li>Luke</li>
-                    <li>Mustafa</li>
-                    <li>Sam</li>
-                </ul>
+            <div class="main">
+                <div class="left">
+                    <ul>
+                        <li><img src="{{ url_for('static', filename='img/arrow-right.svg') }}" alt="">Luke</li>
+                        <li><img src="{{ url_for('static', filename='img/arrow-right.svg') }}" alt="">Mustafa</li>
+                        <li><img src="{{ url_for('static', filename='img/arrow-right.svg') }}" alt="">Sam</li>
+                    </ul>
+                </div>
+
+                <div class="center">
+                    <div class="luke">
+
+                        <div class="profile">
+                            <img src="{{ url_for('static', filename='img/luke/luke-cropped.jpg') }}" alt="" class="headshot">
+                            <div class="brief">
+                                <h3>Luke</h3>
+                                <p>{{data.luke.work_experience}}</p>
+                            </div>
+                        </div>
+                        
+                        <div class="projects">
+                            <div class="project">
+                                <h5>{{ data.luke.projects[0].name }}</h5>
+                                <img src="{{ url_for('static', filename='img/luke/sudoku.png')}}" alt="">
+                            </div>
+                            <div class="project">
+                                <h5>{{ data.luke.projects[1].name }}</h5>
+                                <img src="{{ url_for('static', filename='img/luke/concert.jpg')}}" alt="">
+                            </div>
+                            <div class="project">
+                                <h5>{{ data.luke.projects[2].name }}</h5>
+                                <img src="{{ url_for('static', filename='img/luke/etchasketch.png')}}" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="seperate"></div>
+
+                    <div class="mustafa">
+                        <div class="profile">
+                            <img class="headshot" src="{{ url_for('static', filename='img/mustafa/mustafa_profile.jpg')}}" alt="">
+                            <div class="brief">
+                                <h3>Mustafa</h3>
+                                <p>{{data.mustafa.work_experience}}</p>
+                            </div>
+                        </div>
+                        
+                        <div class="projects">
+                            <div class="project">
+                                <h5>{{ data.mustafa.projects[0].name }}</h5>
+                                <img src="{{ url_for('static', filename='img/mustafa/NCAR.png')}}" alt="">
+                            </div>
+                            <div class="project">
+                                <h5>{{ data.mustafa.projects[1].name }}</h5>
+                                <img src="{{ url_for('static', filename='img/mustafa/myjikanbot.png')}}" alt="">
+                            </div>
+                            <div class="project">
+                                {{ data.mustafa.projects[2].name }}
+                                <img src="{{ url_for('static', filename='img/mustafa/chillchat.png')}}" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="seperate"></div>
+
+                    <div class="sam">
+                        <div class="profile">
+                            <img src="{{ url_for('static', filename='img/sam/samSelfie.jpg') }}" alt="" class="headshot">
+                            <div class="brief">
+                                <h3>Sam</h3>
+                                <p>{{data.sam.work_experience}}</p>
+                            </div>
+                        </div>
+                        
+                        <div class="projects">
+                            <div class="project">
+                                <h5>{{ data.sam.projects[0].name }}</h5>
+                                <div class="blue placeholder-box"></div>
+                            </div>
+                            <div class="project">
+                                <h5>{{ data.sam.projects[1].name }}</h5>
+                                <div class="yellow placeholder-box"></div>
+                            </div>
+                            <div class="project">
+                                <h5>{{ data.sam.projects[2].name }}</h5>
+                                <div class="red placeholder-box"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <p>Up</p>
+                    <p>Down</p>
+                </div>
             </div>
-
-            <div class="experience">
-                <div class="luke">
-                    <h3 class="experience-luke">Luke: {{data.luke.work_experience}}</h3>
-                    <div class="projects">
-                        <div class="project">
-                            <h5>Project 1</h5>
-                            <div class="blue placeholder-box"></div>
-                        </div>
-                        <div class="project">
-                            <h5>Project 2</h5>
-                            <div class="yellow placeholder-box"></div>
-                        </div>
-                        <div class="project">
-                            <h5>Project 3</h5>
-                            <div class="red placeholder-box"></div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="mustafa">
-                    <h3 class="experience-mustafa">Mustafa: {{data.mustafa.work_experience}}</h3>
-                    <div class="projects">
-                        <div class="project">
-                            <h5>Project 1</h5>
-                            <div class="blue placeholder-box"></div>
-                        </div>
-                        <div class="project">
-                            <h5>Project 2</h5>
-                            <div class="yellow placeholder-box"></div>
-                        </div>
-                        <div class="project">
-                            <h5>Project 3</h5>
-                            <div class="red placeholder-box"></div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="sam">
-                    <h3 class="experience-sam">Sam: {{data.sam.work_experience}}</h3>
-                    <div class="projects">
-                        <div class="project">
-                            <h5>Project 1</h5>
-                            <div class="blue placeholder-box"></div>
-                        </div>
-                        <div class="project">
-                            <h5>Project 2</h5>
-                            <div class="yellow placeholder-box"></div>
-                        </div>
-                        <div class="project">
-                            <h5>Project 3</h5>
-                            <div class="red placeholder-box"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
 
-
-        <!-- Expected to send this data to a bootstrap element for better final result. -->
-
-
-
-    </div>
 {% endblock %}

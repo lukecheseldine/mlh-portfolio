@@ -20,6 +20,20 @@
                 "name": "Email",
                 "val": "sam5thibault@gmail.com"
             }
+        ],
+        "projects": [
+            {
+                "name": "project 1",
+                "desc": "desc 1"
+            },
+            {
+                "name": "project 2",
+                "desc": "desc 2"
+            },
+            {
+                "name": "project 3",
+                "desc": "desc 3"
+            }
         ]
     },
     "mustafa": {
@@ -43,6 +57,20 @@
                 "name": "Email",
                 "val": "mus2003.abdul@gmail.com"
             }
+        ],
+        "projects": [
+            {
+                "name": "NCAR",
+                "desc": "Infrared nighttime collision avoidance system"
+            },
+            {
+                "name": "MyJikanBot",
+                "desc": "MYJIKANBOT is a discord bot that retrieves and delivers your favorite anime or manga"
+            },
+            {
+                "name": "ChillChat",
+                "desc": "Chat web app supporting chat rooms with chill music and a gorgeous background"
+            }
         ]
     },
     "luke": {
@@ -65,6 +93,20 @@
             {
                 "name": "Email",
                 "val": "luke.cheseldine@mail.utoronto.ca"
+            }
+        ],
+        "projects": [
+            {
+                "name": "Sudoku Solver",
+                "desc": "Python sudoku solver to instantly solve 9x9 boards"
+            },
+            {
+                "name": "SoundSearch",
+                "desc": "Flask app to recommend local concerts based on user's music taste"
+            },
+            {
+                "name": "Etch-a-Sketch",
+                "desc": "Drawing app available in the browser"
             }
         ]
     }
