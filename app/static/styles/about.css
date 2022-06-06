@@ -87,6 +87,10 @@
     background-color: #0C1917 !important;
 }
 
+.btn:hover {
+    color: #738F75 !important;
+}
+
 .luke-hobby-imgs {
     margin-bottom: -15%;
 }
