@@ -12,7 +12,7 @@ footer {
 
 html *
 {
-   font-family: "koara" !important;
+   font-family: "koara", serif;
 }
 
 b {
@@ -21,7 +21,7 @@ b {
 
 @font-face {
     font-family: 'koara';
-    src: url("../fonts/Koara-font-family/wildBold.otf");
+    src: url("../fonts/Koara-font-family/wildRegular.otf");
     font-weight: normal;
     font-style: normal;
 }
