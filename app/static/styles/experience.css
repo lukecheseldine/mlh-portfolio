@@ -1,0 +1,182 @@
+.content {
+    height: fit-content;
+}
+
+.background {
+    background: url("../img/background.jpg") no-repeat center center / cover;
+    height: 100%;
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+.mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+    color: white;
+}
+
+.guidance {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: -60px;
+    position: sticky;
+}
+
+.guidance ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    flex-wrap: nowrap;
+    height: fit-content;
+    padding: 20px;
+    color: white;
+    gap: 75px;
+}
+
+.left ul {
+    white-space: nowrap;
+    position: sticky;
+    top: 50%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.left ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+}
+
+.left ul li:hover {
+    font-style: italic;
+    cursor: pointer;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.right {
+    height: fit-content;
+    position: sticky;
+    top: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    .left, .right {
+      display: none;
+    }
+  }
+
+.yellow {
+    background-color: yellow;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+.placeholder-box {
+    height: 150px;
+    width: 150px;
+}
+
+#luke, #mustafa, #sam {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.seperate {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.headshot {
+    height: 200px;
+    border-radius: 150px;
+    border: 1px solid white;
+}
+
+.projects {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+.project {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.wrap {
+    position: relative;
+}
+
+.project img {
+    object-fit: cover;
+    height: 150px;
+    width: 150px;
+    border: 1px solid white;
+}
+
+.desc {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+}
+
+.wrap:hover .desc {
+    visibility: visible;
+    opacity: 1;
+}
