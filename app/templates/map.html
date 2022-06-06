@@ -1,15 +1,329 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bef8da988886d7c54576dadeeeb5acbf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    
+                <style>
+                    #float_image_a14a4fbb6fc231330178808af19e87c6 {
+                        position:absolute;
+                        bottom:0%;
+                        left:0%;
+                        }
+                </style>
+            
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_bef8da988886d7c54576dadeeeb5acbf" ></div>
+        
+    
+            <img id="float_image_a14a4fbb6fc231330178808af19e87c6" alt="float_image"
+                 src="/static/img/legend.jpg"
+                 style="z-index: 999999">
+            </img>
+            
+</body>
+<script>    
+    
+            var map_bef8da988886d7c54576dadeeeb5acbf = L.map(
+                "map_bef8da988886d7c54576dadeeeb5acbf",
+                {
+                    center: [43.653, -79.383],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
 
-{% block head %}
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/map.css') }}">
-{% endblock %}
+            
 
-{% block title %}{{ title }}{% endblock %}
+        
+    
+            var tile_layer_1a62a809bb30ba05d27edc80565a19d1 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_bef8da988886d7c54576dadeeeb5acbf);
+        
+    
+            var marker_88655ce47f38a0003c13fc076b6f7f7c = L.marker(
+                [20.77025, -156.239304],
+                {}
+            ).addTo(map_bef8da988886d7c54576dadeeeb5acbf);
+        
+    
+            var icon_a43b36a838cc12b12bf3365befe7195d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_88655ce47f38a0003c13fc076b6f7f7c.setIcon(icon_a43b36a838cc12b12bf3365befe7195d);
+        
+    
+        var popup_f96b32ba0202d3b1a5ad8b25ae43fa62 = L.popup({"maxWidth": "100%"});
 
-{% block content %}
-    <h1>Map</h1>
+        
+            var html_506b1343e37592fe98640ed21ac65c48 = $(`<div id="html_506b1343e37592fe98640ed21ac65c48" style="width: 100.0%; height: 100.0%;">Haleakala National Park, Hawaii</div>`)[0];
+            popup_f96b32ba0202d3b1a5ad8b25ae43fa62.setContent(html_506b1343e37592fe98640ed21ac65c48);
+        
 
-    <div class="map">
-        <h2>This is where we'll put the map. Should be pretty sick...</h2>
-    </div>
-{% endblock %}
+        marker_88655ce47f38a0003c13fc076b6f7f7c.bindPopup(popup_f96b32ba0202d3b1a5ad8b25ae43fa62)
+        ;
+
+        
+    
+    
+            var marker_a405a676bb57a1bd22ddb561d9c4198a = L.marker(
+                [41.546322, 2.44775],
+                {}
+            ).addTo(map_bef8da988886d7c54576dadeeeb5acbf);
+        
+    
+            var icon_e3bc2fd3a5ec5a6818052faad28f4c06 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a405a676bb57a1bd22ddb561d9c4198a.setIcon(icon_e3bc2fd3a5ec5a6818052faad28f4c06);
+        
+    
+        var popup_695c7254a9b16d8fe9bc958b90d8fd79 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5eca6c5da6b604204d1c315129f7354d = $(`<div id="html_5eca6c5da6b604204d1c315129f7354d" style="width: 100.0%; height: 100.0%;">La Sagrada Familia, Spain</div>`)[0];
+            popup_695c7254a9b16d8fe9bc958b90d8fd79.setContent(html_5eca6c5da6b604204d1c315129f7354d);
+        
+
+        marker_a405a676bb57a1bd22ddb561d9c4198a.bindPopup(popup_695c7254a9b16d8fe9bc958b90d8fd79)
+        ;
+
+        
+    
+    
+            var marker_8e9f0cb359a98a0dfe9ebe121c4ba307 = L.marker(
+                [50.8169, -0.1367],
+                {}
+            ).addTo(map_bef8da988886d7c54576dadeeeb5acbf);
+        
+    
+            var icon_0614b5ddab9e125118ca4c9012acc3d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8e9f0cb359a98a0dfe9ebe121c4ba307.setIcon(icon_0614b5ddab9e125118ca4c9012acc3d3);
+        
+    
+        var popup_58231ad23c01bab98906d5badc04c1fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_717c4c50b9aa11251570a0601cc478c0 = $(`<div id="html_717c4c50b9aa11251570a0601cc478c0" style="width: 100.0%; height: 100.0%;">Brighton Palace Pier, UK</div>`)[0];
+            popup_58231ad23c01bab98906d5badc04c1fd.setContent(html_717c4c50b9aa11251570a0601cc478c0);
+        
+
+        marker_8e9f0cb359a98a0dfe9ebe121c4ba307.bindPopup(popup_58231ad23c01bab98906d5badc04c1fd)
+        ;
+
+        
+    
+    
+            var marker_17527785c8af5b61cc2e3a785ff5f11f = L.marker(
+                [43.790428, -110.681763],
+                {}
+            ).addTo(map_bef8da988886d7c54576dadeeeb5acbf);
+        
+    
+            var icon_a997b0e95205e14ceebf329fa9b98909 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_17527785c8af5b61cc2e3a785ff5f11f.setIcon(icon_a997b0e95205e14ceebf329fa9b98909);
+        
+    
+        var popup_7daf0258affc1a3c90aa0e97919a8c9c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_667f7f8a5ade65157a8331f95beb4af8 = $(`<div id="html_667f7f8a5ade65157a8331f95beb4af8" style="width: 100.0%; height: 100.0%;">Grand Teton National Park, USA</div>`)[0];
+            popup_7daf0258affc1a3c90aa0e97919a8c9c.setContent(html_667f7f8a5ade65157a8331f95beb4af8);
+        
+
+        marker_17527785c8af5b61cc2e3a785ff5f11f.bindPopup(popup_7daf0258affc1a3c90aa0e97919a8c9c)
+        ;
+
+        
+    
+    
+            var marker_a143af5eba1bec50531b7d1ef301dd1f = L.marker(
+                [28.538336, -81.379234],
+                {}
+            ).addTo(map_bef8da988886d7c54576dadeeeb5acbf);
+        
+    
+            var icon_86b495ed6dfb74c3e3c81332016862ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a143af5eba1bec50531b7d1ef301dd1f.setIcon(icon_86b495ed6dfb74c3e3c81332016862ec);
+        
+    
+        var popup_b8bbdc85d041fa1bf19b7d0a87c27308 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a7c3e104a8a74ea4bde83033879f4388 = $(`<div id="html_a7c3e104a8a74ea4bde83033879f4388" style="width: 100.0%; height: 100.0%;">Orlando, Florida, USA</div>`)[0];
+            popup_b8bbdc85d041fa1bf19b7d0a87c27308.setContent(html_a7c3e104a8a74ea4bde83033879f4388);
+        
+
+        marker_a143af5eba1bec50531b7d1ef301dd1f.bindPopup(popup_b8bbdc85d041fa1bf19b7d0a87c27308)
+        ;
+
+        
+    
+    
+            var marker_25de73de0d4cea19eee6a4f8862d5504 = L.marker(
+                [40.7127281, -74.0060152],
+                {}
+            ).addTo(map_bef8da988886d7c54576dadeeeb5acbf);
+        
+    
+            var icon_fdbfa8d419b99cdb551918beb7f9db1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_25de73de0d4cea19eee6a4f8862d5504.setIcon(icon_fdbfa8d419b99cdb551918beb7f9db1d);
+        
+    
+        var popup_e0df5c6bbff16267c3f2eb1877c03429 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b95c15b383d818fdd307c1b550f47a6b = $(`<div id="html_b95c15b383d818fdd307c1b550f47a6b" style="width: 100.0%; height: 100.0%;">New York City, USA</div>`)[0];
+            popup_e0df5c6bbff16267c3f2eb1877c03429.setContent(html_b95c15b383d818fdd307c1b550f47a6b);
+        
+
+        marker_25de73de0d4cea19eee6a4f8862d5504.bindPopup(popup_e0df5c6bbff16267c3f2eb1877c03429)
+        ;
+
+        
+    
+    
+            var marker_6603c66e434132784b28045d3612615a = L.marker(
+                [46.829853, -71.254028],
+                {}
+            ).addTo(map_bef8da988886d7c54576dadeeeb5acbf);
+        
+    
+            var icon_d8a23e1cd3f2b111cfd8078bd7b48c35 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6603c66e434132784b28045d3612615a.setIcon(icon_d8a23e1cd3f2b111cfd8078bd7b48c35);
+        
+    
+        var popup_4b74eab6d7ca443d325cb0bfa47fc5e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_611b42ee2b2b1d097f756d9d3f7ae98f = $(`<div id="html_611b42ee2b2b1d097f756d9d3f7ae98f" style="width: 100.0%; height: 100.0%;">Quebec City, Canada</div>`)[0];
+            popup_4b74eab6d7ca443d325cb0bfa47fc5e0.setContent(html_611b42ee2b2b1d097f756d9d3f7ae98f);
+        
+
+        marker_6603c66e434132784b28045d3612615a.bindPopup(popup_4b74eab6d7ca443d325cb0bfa47fc5e0)
+        ;
+
+        
+    
+    
+            var marker_90973ab0f7f4a75241ea4acc3af5377f = L.marker(
+                [45.5017, -73.5673],
+                {}
+            ).addTo(map_bef8da988886d7c54576dadeeeb5acbf);
+        
+    
+            var icon_42cd3f245d0e6ce070dee759deab798e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_90973ab0f7f4a75241ea4acc3af5377f.setIcon(icon_42cd3f245d0e6ce070dee759deab798e);
+        
+    
+        var popup_cda14c6823a884325bf48f18b9552dd0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b92b4cd47212646ccf3786704113f179 = $(`<div id="html_b92b4cd47212646ccf3786704113f179" style="width: 100.0%; height: 100.0%;">Montreal, Canada</div>`)[0];
+            popup_cda14c6823a884325bf48f18b9552dd0.setContent(html_b92b4cd47212646ccf3786704113f179);
+        
+
+        marker_90973ab0f7f4a75241ea4acc3af5377f.bindPopup(popup_cda14c6823a884325bf48f18b9552dd0)
+        ;
+
+        
+    
+    
+            var marker_047979e71caf0c198daa34be91a3b422 = L.marker(
+                [17.385, 78.4867],
+                {}
+            ).addTo(map_bef8da988886d7c54576dadeeeb5acbf);
+        
+    
+            var icon_1c8088d2ddb2e49b45ca3626f4bb45c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_047979e71caf0c198daa34be91a3b422.setIcon(icon_1c8088d2ddb2e49b45ca3626f4bb45c8);
+        
+    
+        var popup_ea0ff4766c6447b907dc7d44c049e6d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0a3d635b95f43b0ed6e817713479d31b = $(`<div id="html_0a3d635b95f43b0ed6e817713479d31b" style="width: 100.0%; height: 100.0%;">Hyderabad, India</div>`)[0];
+            popup_ea0ff4766c6447b907dc7d44c049e6d9.setContent(html_0a3d635b95f43b0ed6e817713479d31b);
+        
+
+        marker_047979e71caf0c198daa34be91a3b422.bindPopup(popup_ea0ff4766c6447b907dc7d44c049e6d9)
+        ;
+
+        
+    
+    
+            var marker_40f03f559ff41d10d18049875e28d6d8 = L.marker(
+                [25.2854, 51.531],
+                {}
+            ).addTo(map_bef8da988886d7c54576dadeeeb5acbf);
+        
+    
+            var icon_2f09e51ee10447f2917e8ad08bc31307 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_40f03f559ff41d10d18049875e28d6d8.setIcon(icon_2f09e51ee10447f2917e8ad08bc31307);
+        
+    
+        var popup_0b26e1f937e17604399ccad965a626bb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ffff6dee43fd7b0bb4ee0a1ab393bed2 = $(`<div id="html_ffff6dee43fd7b0bb4ee0a1ab393bed2" style="width: 100.0%; height: 100.0%;">Doha Qatar</div>`)[0];
+            popup_0b26e1f937e17604399ccad965a626bb.setContent(html_ffff6dee43fd7b0bb4ee0a1ab393bed2);
+        
+
+        marker_40f03f559ff41d10d18049875e28d6d8.bindPopup(popup_0b26e1f937e17604399ccad965a626bb)
+        ;
+
+        
+    
+</script>

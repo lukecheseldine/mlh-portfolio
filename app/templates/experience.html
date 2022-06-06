@@ -1,18 +1,156 @@
 {% extends "base.html" %}
 
 {% block head %}
-<link rel="stylesheet" href="{{ url_for('static', filename='styles/experience.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/experience.css') }}">
+    <script src="{{ url_for('static', filename='scripts/experience.js') }}" defer></script>
 {% endblock %}
 
 {% block title %}{{ title }}{% endblock %}
 
 {% block content %}
-<h1>Experience</h1>
-<div class="experience">
+    <div class="background">
+        <div class="mask">
 
-    <!-- Expected to send this data to a bootstrap element for better final result. -->
-    <h3 class="experience-sam">Sam: {{data.sam.work_experience}}</h3>
-    <h3 class="experience-luke">Luke: {{data.luke.work_experience}}</h3>
-    <h3 class="experience-mustafa">Mustafa: {{data.mustafa.work_experience}}</h3>
-</div>
+            <h1>Experience</h1>
+
+            <div class="main">
+                <div class="left">
+                    <ul>
+                        <li id="luke-button"><img src="{{ url_for('static', filename='img/arrow-right.svg') }}" alt="">Luke</li>
+                        <li id="mustafa-button"><img src="{{ url_for('static', filename='img/arrow-right.svg') }}" alt="">Mustafa</li>
+                        <li id="sam-button"><img src="{{ url_for('static', filename='img/arrow-right.svg') }}" alt="">Sam</li>
+                    </ul>
+                </div>
+
+                <div class="center">
+                    <div id="luke">
+
+                        <div class="profile">
+                            <img src="{{ url_for('static', filename='img/luke/luke-cropped.jpg') }}" alt="" class="headshot">
+                            <div class="brief">
+                                <h3>Luke</h3>
+                                <p>{{data.luke.work_experience}}</p>
+                            </div>
+                        </div>
+                        
+                        <div class="projects">
+                            <div class="project">
+                                <h5>{{ data.luke.projects[0].name }}</h5>
+                                <a href="{{ data.luke.projects[0].link }}">
+                                    <div class="wrap">
+                                        <img src="{{ url_for('static', filename='img/luke/sudoku.png')}}" alt="">
+                                        <div class="desc">{{ data.luke.projects[0].desc }}</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="project">
+                                <h5>{{ data.luke.projects[1].name }}</h5>
+                                <a href="{{ data.luke.projects[1].link }}">
+                                    <div class="wrap">
+                                        <img src="{{ url_for('static', filename='img/luke/concert.jpg')}}" alt="">
+                                        <div class="desc">{{ data.luke.projects[1].desc }}</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="project">
+                                <h5>{{ data.luke.projects[2].name }}</h5>
+                                <a href="{{ data.luke.projects[2].link }}">
+                                    <div class="wrap">
+                                        <img src="{{ url_for('static', filename='img/luke/etchasketch.png')}}" alt="">
+                                        <div class="desc">{{ data.luke.projects[2].desc }}</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="seperate"></div>
+
+                    <div id="mustafa">
+                        <div class="profile">
+                            <img class="headshot" src="{{ url_for('static', filename='img/mustafa/mustafa_profile.jpg')}}" alt="">
+                            <div class="brief">
+                                <h3>Mustafa</h3>
+                                <p>{{data.mustafa.work_experience}}</p>
+                            </div>
+                        </div>
+                        
+                        <div class="projects">
+                            <div class="project">
+                                <h5>{{ data.mustafa.projects[0].name }}</h5>
+                                <a href="{{ data.mustafa.projects[0].link }}">
+                                    <div class="wrap">
+                                        <img src="{{ url_for('static', filename='img/mustafa/NCAR.png')}}" alt="">
+                                        <div class="desc">{{ data.mustafa.projects[0].desc }}</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="project">
+                                <h5>{{ data.mustafa.projects[1].name }}</h5>
+                                <a href="{{ data.mustafa.projects[1].link }}">
+                                    <div class="wrap">
+                                        <img src="{{ url_for('static', filename='img/mustafa/myjikanbot.png')}}" alt="">
+                                        <div class="desc">{{ data.mustafa.projects[1].desc }}</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="project">
+                                <h5>{{ data.mustafa.projects[2].name }}</h5>
+                                <a href="{{ data.mustafa.projects[2].link }}">
+                                    <div class="wrap">
+                                        <img src="{{ url_for('static', filename='img/mustafa/chillchat.png')}}" alt="">
+                                        <div class="desc">{{ data.mustafa.projects[2].desc }}</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="seperate"></div>
+
+                    <div id="sam">
+                        <div class="profile">
+                            <img src="{{ url_for('static', filename='img/sam/samSelfie.jpg') }}" alt="" class="headshot">
+                            <div class="brief">
+                                <h3>Sam</h3>
+                                <p>{{data.sam.work_experience}}</p>
+                            </div>
+                        </div>
+                        
+                        <div class="projects">
+                            <div class="project">
+                                <h5>{{ data.sam.projects[0].name }}</h5>
+                                <a href="{{ data.sam.projects[0].link }}">
+                                    <div class="wrap">
+                                        <img src="{{ url_for('static', filename='img/sam/TimeSavior.png')}}" alt="">
+                                        <div class="desc">{{ data.sam.projects[0].desc }}</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="project">
+                                <h5>{{ data.sam.projects[1].name }}</h5>
+                                <a href="{{ data.sam.projects[2].link }}">
+                                    <div class="wrap">
+                                        <img src="{{ url_for('static', filename='img/sam/CookHack.png')}}" alt="">
+                                        <div class="desc">{{ data.sam.projects[1].desc }}</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="project">
+                                <h5>{{ data.sam.projects[2].name }}</h5>
+                                <a href="{{ data.sam.projects[2].link }}">
+                                    <div class="wrap">
+                                        <img src="{{ url_for('static', filename='img/sam/car.png')}}" alt="">
+                                        <div class="desc">{{ data.sam.projects[2].desc }}</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 {% endblock %}
