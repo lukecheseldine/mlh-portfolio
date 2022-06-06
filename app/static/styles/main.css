@@ -19,8 +19,9 @@ body {
 }
 
 .nav-logo img {
-    width: 210px;
+    width: 50px;
     margin-right: 30px;
+    margin-left: 10px;
 }
 
 .intro,
@@ -43,4 +44,7 @@ body {
     text-align: center;
     color: white;
     font-size: 4vw;
+
+.navbar{
+    background-color: #0C1917 !important;
 }
