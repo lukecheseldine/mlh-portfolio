@@ -10,6 +10,11 @@ footer {
     font-family: "koara-light", serif;
 }
 
+html *
+{
+   font-family: "koara" !important;
+}
+
 b {
     font-family: "koara", serif;
 }
