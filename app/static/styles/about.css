@@ -11,6 +11,7 @@
     text-align: center;
     color: white;
     font-size: 4vw;
+    font-family: "koara", serif;
 }
 
 .header {
@@ -21,6 +22,9 @@
 /* if we want the card text centered: */
 .carousel-item {
     text-align: center;
+}
+.carousel-item h5 {
+    font-family: "koara", serif;
 }
 
 .card-img-top-luke {

@@ -5,7 +5,7 @@
         "about_short": "Hi, my name is Sam, I'm from Ottawa, and am completing my studies in Kingston, ON.",
         "education": "Rising junior studying Computer Engineering at Queen's University in ON, Canada.",
         "work_experience": "Computer Science Tutor, Queen's Racing Electrical Team Member",
-        "hobbies": "Working on cars, Buildings computers, Playing video games",
+        "hobbies": "working on cars, buildings computers, and playing video games.",
         "map_data": "Canada, USA",
         "social": [
             {
@@ -41,11 +41,11 @@
     },
     "mustafa": {
         "name": "Mustafa Abdulrahman",
-        "about": "Hey, I'm Mustafa, I'm from Milton, Ontario and am studying in Toronto, ON. I have experience in full stack development and keen on learning about complicated systems.",
-        "about_short": "Hey, I'm Mustafa, I'm from Milton, Ontario and am studying in Toronto, ON.",
-        "education": "Rising sophomore studying computer engineering at University of Toronto",
+        "about": "Hey, I'm Mustafa, from Milton and am studying in Toronto, ON. I have experience in full-stack development and am keen on learning about distributed systems.",
+        "about_short": "Hey, I'm Mustafa, from Milton and I am studying in Toronto, ON.",
+        "education": "Rising sophomore studying computer engineering at the University of Toronto.",
         "work_experience": "STEM Educator intern, IEEE Web PM",
-        "hobbies": "Watching anime, playing jrpgs, playing basketball",
+        "hobbies": "playing basketball, watching anime, and playing jrpgs.",
         "map_data": "Canada, USA, India",
         "social": [
             {
@@ -81,11 +81,11 @@
     },
     "luke": {
         "name": "Luke Cheseldine",
-        "about": "Hi! I'm Luke and I'm from Maine! I'm currently studying computer science in Toronto. I'm interested in fullstack web development and computer vision. I'm also super stoked to learn more this summer about everything that goes on behind the scenes to deploy and support web apps!",
+        "about": "Hi! I'm Luke and I'm from Maine! I'm currently studying computer science in Toronto. I'm interested in full-stack web development and computer vision. I'm also super stoked to learn more this summer about everything that goes on behind the scenes to deploy and support web apps!",
         "about_short": "Hi! I'm Luke and I'm from Maine! I'm currently studying computer science in Toronto.",
-        "education": "Rising sophomore studying computer science at the University of Toronto",
+        "education": "Rising sophomore studying computer science at the University of Toronto.",
         "work_experience": "IEEE Webmaster Associate, Soccer Coach",
-        "hobbies": "hiking, surfing, soccer, skateboarding",
+        "hobbies": "hiking, surfing, soccer, and skateboarding.",
         "map_data": "Hawaii, Spain, England, Canada",
         "social": [
             {

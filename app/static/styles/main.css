@@ -5,8 +5,25 @@ h3,
 h4,
 h5,
 h6,
-button {
-    font-family: "Roboto", serif;
+button,
+footer {
+    font-family: "koara-light", serif;
+}
+
+html *
+{
+   font-family: "koara", serif;
+}
+
+b {
+    font-family: "koara", serif;
+}
+
+@font-face {
+    font-family: 'koara';
+    src: url("../fonts/Koara-font-family/wildRegular.otf");
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
@@ -14,8 +31,12 @@ body {
     background-size: cover;
     width: auto;
     overflow-x: hidden;
-    font-family: "Roboto", serif;
+    font-family: "koara", serif;
     margin: 0px;
+}
+
+.navbar {
+    font-family: "koara", serif;
 }
 
 .nav-logo img {
