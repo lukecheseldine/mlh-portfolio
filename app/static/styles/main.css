@@ -26,9 +26,28 @@ body {
 
 .intro,
 .about,
-.experience,
-.map {
+.experience {
     margin-top: 300px;
+}
+
+.folium {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.section {
+    background-image: url("../img/map_background.jpg");
+}
+
+.header-text {
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
 }
 
 .navbar{
