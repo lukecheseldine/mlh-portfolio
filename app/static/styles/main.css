@@ -43,7 +43,12 @@ body {
 .header-text {
     text-align: center;
     color: white;
-    font-size: 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+}
 
 .navbar{
     background-color: #0C1917 !important;
