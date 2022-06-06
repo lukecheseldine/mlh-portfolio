@@ -14,19 +14,34 @@ data = json.load(data)
 # routes send the loaded json object "data" to display personal information
 @app.route("/")
 def index():
-    return render_template('index.html', title="Team Jungle Portfolio", url=os.getenv("URL"), data=data)
+    return render_template(
+        "index.html", title="Team Jungle Portfolio", url=os.getenv("URL"), data=data
+    )
+
 
 @app.route("/about")
 def about():
-    return render_template('about.html', title="Team Jungle Portfolio", url=os.getenv("URL"), data=data)
+    return render_template(
+        "about.html", title="Team Jungle Portfolio", url=os.getenv("URL"), data=data
+    )
+
 
 @app.route("/experience")
 def experience():
-    return render_template('experience.html', title="Team Jungle Portfolio", url=os.getenv("URL"), data=data)
+    return render_template(
+        "experience.html",
+        title="Team Jungle Portfolio",
+        url=os.getenv("URL"),
+        data=data,
+    )
+
 
 @app.route("/map")
 def map():
-    return render_template('map.html', title="Team Jungle Portfolio", url=os.getenv("URL"), data=data)
+    return render_template(
+        "map.html", title="Team Jungle Portfolio", url=os.getenv("URL"), data=data
+    )
+
 
 @app.route("/folium_map")
 def folium_map():
