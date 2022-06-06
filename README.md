@@ -12,6 +12,7 @@ A portfolio website showcasing our team's profiles, hobbies, work experiences, a
 - Folium
 - HTML
 - CSS
+- JavaScript
 - Bootstrap V5.0
 
 ## Challenges we ran into
