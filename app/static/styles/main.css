@@ -32,5 +32,15 @@ body {
 .folium {
     display: flex;
     justify-content: center;
+    height: 100vh;
+}
+
+.section {
     background-image: url("../img/map_background.jpg");
+}
+
+.header-text {
+    text-align: center;
+    color: white;
+    font-size: 4vw;
 }

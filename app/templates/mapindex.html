@@ -56,16 +56,25 @@
         </ul>
     </div>
 </nav>
-
-<div class="folium" >
-    <iframe src="/map" width="900" height="700"></iframe>
+<div class="section">
+    <h1 class="header-text">Where we have been!</h1>
+    <div class="folium">
+        <iframe src="/map" width="900" height="700"></iframe>
+    </div>
 </div>
+
 
 <div id="content">{% block content %}{% endblock %}</div>
 <div id="footer">
-    {% block footer %}
-        &copy; Copyright 2022 by Luke, Mustafa, and Sam.
-    {% endblock %}
+    <footer class=" text-center text-white" style="background-color:#0C1917;">
+
+        <!-- Copyright -->
+        <div class="text-center p-3">
+            © 2022 Luke, Mustafa, Sam
+        </div>
+        <!-- Copyright -->
+
+    </footer>
 </div>
 
 
