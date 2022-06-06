@@ -13,6 +13,11 @@
     font-size: 4vw;
 }
 
+.header {
+    position: relative;
+    top: 4vh;
+}
+
 /* if we want the card text centered: */
 .carousel-item {
     text-align: center;
