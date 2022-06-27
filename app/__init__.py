@@ -1,3 +1,4 @@
+from crypt import methods
 import os
 from flask import Flask, render_template, request
 from dotenv import load_dotenv
@@ -35,7 +36,10 @@ class TimelinePost(Model):
 mydb.connect()
 mydb.create_tables([TimelinePost])
 
-# routes send the loaded json object "data" to display personal information
+############################################################
+######################## PAGE ROUTES #######################
+############################################################
+
 @app.route("/")
 def index():
     return render_template(
@@ -66,7 +70,6 @@ def map():
         "map.html", title="Team Jungle Portfolio", url=os.getenv("URL"), data=data
     )
 
-
 @app.route("/folium_map")
 def folium_map():
 
@@ -94,6 +97,14 @@ def folium_map():
     folium_map.save("app/templates/map.html")
     return render_template("mapindex.html")
 
+@app.route('/timeline')
+def timeline():
+    return render_template('timeline.html', title="Timeline")
+
+############################################################
+######################## API ROUTES ########################
+############################################################
+
 @app.route('/api/timeline_post', methods=['POST'])
 def post_time_line_post():
     name = request.form['name']
@@ -113,3 +124,14 @@ def get_time_line_post():
 TimelinePost.select().order_by(TimelinePost.created_at.desc())
         ]
     }
+
+@app.route('/api/timeline_post', methods=['DELETE'])
+def delete_time_line_post():
+    id_to_delete = request.form['id']
+    TimelinePost.delete().where(TimelinePost.id == id_to_delete).execute()
+    return f'deleted id number {id_to_delete}'
+
+@app.route('/api/timeline_post', methods=['PURGE'])
+def purge_time_line_post():
+    TimelinePost.delete().execute()
+    return "purged timeline"
