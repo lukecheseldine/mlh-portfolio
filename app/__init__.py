@@ -14,14 +14,16 @@ app = Flask(__name__)
 data = open("app/static/data.json")
 data = json.load(data)
 
-mydb = \
-MySQLDatabase(os.getenv("MYSQL_DATABASE"),
-    user=os.getenv("MYSQL_USER"),
-    password=os.getenv("MYSQL_PASSWORD"),
-    host=os.getenv("MYSQL_HOST"),
-    port=3306
+if os.getenv("TESTING") == "true":
+    print("Running is test mode")
+    mydb = SqliteDatabase('file:memory?mode=memory&cache=shared', uri=True)
+else:
+    mydb = MySQLDatabase(os.getenv("MYSQL_DATABASE"),
+        user=os.getenv("MYSQL_USER"),
+        password=os.getenv("MYSQL_PASSWORD"),
+        host=os.getenv("MYSQL_HOST"),
+        port=3306
 )
-
 
 class TimelinePost(Model):
     name = CharField()
@@ -106,11 +108,26 @@ def timeline():
 
 @app.route('/api/timeline_post', methods=['POST'])
 def post_time_line_post():
-    name = request.form['name']
-    email = request.form['email']
-    content = request.form['content']
-    timeline_post = TimelinePost.create(name=name, email=email, content=content)
+    try:
+        name = request.form['name']
+        if (name == "" or name == None):
+            return 'Invalid name', 400
+    except:
+        return 'Invalid name', 400
+    try:
+        email = request.form['email']
+        if (not ("@" in email and "." in email) or email == "" or email == None):
+            return 'Invalid email', 400
+    except:
+        return 'Invalid email', 400
+    try:
+        content = request.form['content']
+        if (content == "" or content == None):
+            return 'Invalid content', 400
+    except:
+        return 'Invalid content', 400
 
+    timeline_post = TimelinePost.create(name=name, email=email, content=content)
     mydb.session_commit
     return model_to_dict(timeline_post)
 
