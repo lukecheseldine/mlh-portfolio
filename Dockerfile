@@ -1,6 +1,6 @@
 FROM python:3.9-slim-buster
 
-WORkDIR /myportfolio
+WORKDIR /myportfolio
 
 COPY requirements.txt .
 
