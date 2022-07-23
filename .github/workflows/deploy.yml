@@ -32,4 +32,4 @@ jobs:
         run: ssh my-vps 'cd portfolio && ./redeploy-site.sh'
 
       - name: Print container status
-        run: pwd && ls
+        run: ssh my-vps 'cd portfolio && docker-compose ps'
