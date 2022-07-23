@@ -33,3 +33,6 @@ jobs:
 
       - name: Print container status
         run: ssh my-vps 'cd portfolio && docker ps'
+
+      - name: Discord notification
+        run: curl -s -X POST "${{ secrets.DISCORD_WEBHOOK }}" -d "content=🚀 Deployment Successful"
