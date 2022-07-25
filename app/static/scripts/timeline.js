@@ -19,6 +19,7 @@ timelineForm.addEventListener('submit', (e) => {
     .then(res => res.json())
     .then(data => updateDisplay(data))
 
+    location.reload()
 })
 
 function updateDisplay(data) {
