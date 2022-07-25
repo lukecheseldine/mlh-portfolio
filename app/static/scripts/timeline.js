@@ -12,17 +12,18 @@ timelineForm.addEventListener('submit', (e) => {
     })
     .then(res => res.json())
     .then(data => console.log(data))
-    
-    fetch('/api/timeline_post', {
-        method: 'GET',
-    })
-    .then(res => res.json())
-    .then(data => updateDisplay(data))
 
-    location.reload()
+    window.location.reload();
+    
+    // fetch('/api/timeline_post', {
+    //     method: 'GET',
+    // })
+    // .then(res => res.json())
+    // .then(data => updateDisplay(data))
 })
 
 function updateDisplay(data) {
+
     timeline.innerHTML = '';
     console.log(data['timeline_posts'].reverse())
     data['timeline_posts'].reverse().forEach((postData) => {
