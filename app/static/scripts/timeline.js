@@ -13,7 +13,8 @@ timelineForm.addEventListener('submit', (e) => {
     .then(res => res.json())
     .then(data => console.log(data))
 
-    window.location.reload();
+    setTimeout(window.location.reload(), 1000)
+    
     
     // fetch('/api/timeline_post', {
     //     method: 'GET',
